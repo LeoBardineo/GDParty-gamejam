@@ -32,7 +32,7 @@ public class Estalactite : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
-        if(collision.gameObject.tag == "Chão"){
+        if(collision.gameObject.tag == "ground"){
             grounded = true;
             Debug.LogError(grounded);
         } else if (collision.gameObject.tag == "Player" && !grounded){
