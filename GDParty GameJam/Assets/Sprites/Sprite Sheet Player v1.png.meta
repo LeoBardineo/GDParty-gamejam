@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite Sheet Player v1_0
+      name: dash 0
       rect:
         serializedVersion: 2
         x: 109
@@ -118,7 +118,7 @@ TextureImporter:
         width: 275
         height: 415
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -131,7 +131,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet Player v1_1
+      name: dash 1
       rect:
         serializedVersion: 2
         x: 466
@@ -139,7 +139,7 @@ TextureImporter:
         width: 280
         height: 415
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,7 +152,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet Player v1_2
+      name: walk 0
       rect:
         serializedVersion: 2
         x: 120
@@ -160,7 +160,7 @@ TextureImporter:
         width: 274
         height: 415
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -173,7 +173,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet Player v1_3
+      name: walk 1
       rect:
         serializedVersion: 2
         x: 472
@@ -181,7 +181,7 @@ TextureImporter:
         width: 274
         height: 407
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,7 +194,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet Player v1_4
+      name: walk 2
       rect:
         serializedVersion: 2
         x: 867
@@ -202,7 +202,7 @@ TextureImporter:
         width: 288
         height: 402
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -215,7 +215,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet Player v1_5
+      name: walk 3
       rect:
         serializedVersion: 2
         x: 1258
@@ -223,7 +223,7 @@ TextureImporter:
         width: 300
         height: 408
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -236,7 +236,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet Player v1_6
+      name: walk 4
       rect:
         serializedVersion: 2
         x: 1630
@@ -244,7 +244,7 @@ TextureImporter:
         width: 304
         height: 389
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -257,7 +257,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet Player v1_7
+      name: walk 5
       rect:
         serializedVersion: 2
         x: 110
@@ -265,7 +265,7 @@ TextureImporter:
         width: 286
         height: 413
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -278,7 +278,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet Player v1_8
+      name: walk 6
       rect:
         serializedVersion: 2
         x: 464
@@ -286,7 +286,7 @@ TextureImporter:
         width: 282
         height: 424
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -299,7 +299,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet Player v1_9
+      name: walk 7
       rect:
         serializedVersion: 2
         x: 873
@@ -307,7 +307,7 @@ TextureImporter:
         width: 282
         height: 424
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -320,7 +320,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet Player v1_10
+      name: walk 8
       rect:
         serializedVersion: 2
         x: 1274
@@ -328,7 +328,7 @@ TextureImporter:
         width: 284
         height: 421
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -341,7 +341,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet Player v1_12
+      name: idle 0
       rect:
         serializedVersion: 2
         x: 237
@@ -349,7 +349,7 @@ TextureImporter:
         width: 157
         height: 469
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -362,7 +362,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet Player v1_14
+      name: idle 1
       rect:
         serializedVersion: 2
         x: 602
@@ -370,7 +370,7 @@ TextureImporter:
         width: 157
         height: 469
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -383,7 +383,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet Player v1_16
+      name: idle 2
       rect:
         serializedVersion: 2
         x: 997
@@ -391,7 +391,7 @@ TextureImporter:
         width: 158
         height: 469
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -404,7 +404,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet Player v1_18
+      name: idle 3
       rect:
         serializedVersion: 2
         x: 1401
@@ -412,7 +412,7 @@ TextureImporter:
         width: 157
         height: 469
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -425,7 +425,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet Player v1_19
+      name: jump 0
       rect:
         serializedVersion: 2
         x: 195
@@ -433,7 +433,7 @@ TextureImporter:
         width: 199
         height: 431
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -446,7 +446,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet Player v1_20
+      name: jump 1
       rect:
         serializedVersion: 2
         x: 588
@@ -454,7 +454,7 @@ TextureImporter:
         width: 156
         height: 467
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -467,7 +467,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet Player v1_22
+      name: jump 2
       rect:
         serializedVersion: 2
         x: 975
@@ -475,7 +475,7 @@ TextureImporter:
         width: 179
         height: 462
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -488,7 +488,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet Player v1_23
+      name: jump 3
       rect:
         serializedVersion: 2
         x: 1351
@@ -496,7 +496,7 @@ TextureImporter:
         width: 207
         height: 461
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -509,7 +509,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet Player v1_25
+      name: jump 4
       rect:
         serializedVersion: 2
         x: 175
@@ -517,7 +517,7 @@ TextureImporter:
         width: 219
         height: 453
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -530,7 +530,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet Player v1_26
+      name: jump 5
       rect:
         serializedVersion: 2
         x: 507
@@ -538,7 +538,7 @@ TextureImporter:
         width: 237
         height: 453
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -551,7 +551,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet Player v1_27
+      name: jump 6
       rect:
         serializedVersion: 2
         x: 955
@@ -559,7 +559,7 @@ TextureImporter:
         width: 200
         height: 430
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -572,7 +572,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet Player v1_28
+      name: double jump 0
       rect:
         serializedVersion: 2
         x: 195
@@ -580,7 +580,7 @@ TextureImporter:
         width: 199
         height: 430
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -593,7 +593,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet Player v1_29
+      name: double jump 1
       rect:
         serializedVersion: 2
         x: 597
@@ -601,7 +601,7 @@ TextureImporter:
         width: 225
         height: 434
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -614,7 +614,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet Player v1_30
+      name: double jump 2
       rect:
         serializedVersion: 2
         x: 1009
@@ -622,7 +622,7 @@ TextureImporter:
         width: 174
         height: 450
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -635,7 +635,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Sheet Player v1_31
+      name: double jump 3
       rect:
         serializedVersion: 2
         x: 1351
@@ -643,7 +643,7 @@ TextureImporter:
         width: 207
         height: 460
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -666,38 +666,38 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sprite Sheet Player v1_0: -1485822208
-      Sprite Sheet Player v1_1: -192373580
-      Sprite Sheet Player v1_10: -630862609
       Sprite Sheet Player v1_11: 1034057377
-      Sprite Sheet Player v1_12: -950243433
       Sprite Sheet Player v1_13: 442715011
-      Sprite Sheet Player v1_14: 355047891
       Sprite Sheet Player v1_15: -1923542477
-      Sprite Sheet Player v1_16: -471011950
       Sprite Sheet Player v1_17: -142645988
-      Sprite Sheet Player v1_18: -644631207
-      Sprite Sheet Player v1_19: -1891064021
-      Sprite Sheet Player v1_2: -1645025853
-      Sprite Sheet Player v1_20: -62151931
       Sprite Sheet Player v1_21: 2139830839
-      Sprite Sheet Player v1_22: -2112420918
-      Sprite Sheet Player v1_23: -1845168965
       Sprite Sheet Player v1_24: -1924072306
-      Sprite Sheet Player v1_25: 977793939
-      Sprite Sheet Player v1_26: -1182306369
-      Sprite Sheet Player v1_27: 248074901
-      Sprite Sheet Player v1_28: 624316272
-      Sprite Sheet Player v1_29: -561370147
-      Sprite Sheet Player v1_3: -652140024
-      Sprite Sheet Player v1_30: -968027611
-      Sprite Sheet Player v1_31: 1401127271
-      Sprite Sheet Player v1_4: -966309301
-      Sprite Sheet Player v1_5: 1918553704
-      Sprite Sheet Player v1_6: -1759032335
-      Sprite Sheet Player v1_7: 701958551
-      Sprite Sheet Player v1_8: 1423066062
-      Sprite Sheet Player v1_9: -21748830
+      dash 0: -1485822208
+      dash 1: -192373580
+      double jump 0: 624316272
+      double jump 1: -561370147
+      double jump 2: -968027611
+      double jump 3: 1401127271
+      idle 0: -950243433
+      idle 1: 355047891
+      idle 2: -471011950
+      idle 3: -644631207
+      jump 0: -1891064021
+      jump 1: -62151931
+      jump 2: -2112420918
+      jump 3: -1845168965
+      jump 4: 977793939
+      jump 5: -1182306369
+      jump 6: 248074901
+      walk 0: -1645025853
+      walk 1: -652140024
+      walk 2: -966309301
+      walk 3: 1918553704
+      walk 4: -1759032335
+      walk 5: 701958551
+      walk 6: 1423066062
+      walk 7: -21748830
+      walk 8: -630862609
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
