@@ -5,7 +5,6 @@ using UnityEngine;
 public class Mouse : MonoBehaviour
 {
     public float Timer;
-    private bool on = true;
     void Update()
     {
         Timer += Time.deltaTime;
