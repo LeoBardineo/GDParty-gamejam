@@ -17,29 +17,39 @@ public class Player : MonoBehaviour
    void Start()
    {
         anim = GetComponent<Animator>();
+        isJumping = false;
    }
 
    void FixedUpdate()
    {
-    Move();
-
-    if (Input.GetButtonDown("Jump") && isJumping == false)
-    {
-        rb.AddForce(new Vector2(rb.velocity.x, jump));
-        doubleJump = true;
-    }
-    if (Input.GetButtonDown("Jump") && isJumping == true && doubleJump == true)
-    {
-        rb.velocity = new Vector2(rb.velocity.x, 0f);
-        rb.AddForce(new Vector2(rb.velocity.x, jump));
-        doubleJump = false;
-    }
-    // ChangeAnimationState("Player_Jump");
+        Move();
+        
+        // ChangeAnimationState("Player_Jump");
    }
 
    void Update()
    {
         Pausou();
+        if (Input.GetButtonDown("Jump") && isJumping == false)
+        {
+            rb.AddForce(new Vector2(rb.velocity.x, jump));
+            doubleJump = true;
+        }
+        if (Input.GetButtonDown("Jump") && isJumping == true && doubleJump == true)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, 0f);
+            rb.AddForce(new Vector2(rb.velocity.x, jump));
+            doubleJump = false;
+        }
+
+        if(rb.velocity.y > 0 && isJumping == true)
+        {
+            ChangeAnimationState("Player_JumpUp");
+        }
+        if(rb.velocity.y < 0 && isJumping == true)
+        {
+            ChangeAnimationState("Player_JumpDown");
+        }
    }
 
    private void OnCollisionEnter2D(Collision2D other)
@@ -52,6 +62,7 @@ public class Player : MonoBehaviour
         if (other.gameObject.CompareTag("obstacle"))
         {
             //morre
+            //ChangeAnimationState("Player_Death");
         }
    }
 
@@ -74,24 +85,23 @@ public class Player : MonoBehaviour
     {
         rb.velocity = new Vector3(speed * Input.GetAxis("Horizontal"), rb.velocity.y,0f);
         
-        if(Input.GetAxis("Horizontal") > 0f)
+        if(Input.GetAxis("Horizontal") > 0f && isJumping == false)
         {
             ChangeAnimationState("Player_Walk");
             transform.eulerAngles = new Vector3(0f,0f,0f);
         }
-        else if(Input.GetAxis("Horizontal") < 0f)
+        else if(Input.GetAxis("Horizontal") < 0f && isJumping == false)
         {
             ChangeAnimationState("Player_Walk");
             transform.eulerAngles = new Vector3(0f,180f,0f);
         }
-        else
+        else if(Input.GetAxis("Horizontal") == 0f && isJumping == false)
         {
             ChangeAnimationState("Player_Idle");
         }
     }
     // --------------------------------------------------------
     // Quando tiver as outras skills implementadas, colocar os states pras animações
-    //ChangeAnimationState("Player_Dash");
     // ChangeAnimationState("Player_DoubleJump");
 
     public void Pausou()
@@ -100,5 +110,10 @@ public class Player : MonoBehaviour
         {
             Paused = !Paused;
         }
+    }
+
+    void Dash()
+    {
+        //ChangeAnimationState("Player_Dash");
     }
 }
