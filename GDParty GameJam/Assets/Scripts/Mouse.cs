@@ -12,19 +12,16 @@ public class Mouse : MonoBehaviour
         if ( Timer >= 2f)
         {
            Cursor.visible = false;
-           on = false;
         }
         
         if (Input.GetAxis("Mouse X")<0)
         {
             Cursor.visible = true;
-            on = true;
             Timer = 0;
         }
         if(Input.GetAxis("Mouse X")>0)
         {
             Cursor.visible = true;
-            on = true;
             Timer = 0;
         }
     }
