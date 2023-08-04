@@ -11,16 +11,17 @@ public class Player : MonoBehaviour
    private Animator anim;
    private string currentState;
    //DoubleJump
+   public bool doubleJumpUnlocked = false;
    public bool doubleJump = false;
    //Dash
    public bool dashUnlocked = false, jumpDashUnlocked = false;
    private Vector3 myVector;
    private bool canDash = true;
    private bool isDashing;
-   private float dashingPower = 7000f;
-   private float dashingTime = 0.1f;
-   private float dashingCooldown = 1f;
-   public bool facingRight, facingLeft;
+   private float dashingPower = 7200f;
+   private float dashingTime = 0.09f;
+   private float dashingCooldown = 0.7f;
+   public bool facingRight = true, facingLeft;
    private RigidbodyConstraints2D originalConstraints;
    [SerializeField] private TrailRenderer tr;
 
@@ -117,14 +118,25 @@ public class Player : MonoBehaviour
             rb.AddForce(new Vector2(rb.velocity.x, jump));
             doubleJump = true;
         }
-        if (Input.GetButtonDown("Jump") && isJumping == true && doubleJump == true)
+        if (Input.GetButtonDown("Jump") && isJumping == true && doubleJump == true && doubleJumpUnlocked == true)
         {
             rb.velocity = new Vector2(rb.velocity.y, 0f);
             rb.velocity = new Vector2(rb.velocity.x, 0f);
             rb.AddForce(new Vector2(rb.velocity.x, jump));
             doubleJump = false;
         }
-
+        if(Input.GetAxis("Horizontal") > 0f)
+        {
+            transform.eulerAngles = new Vector3(0f,0f,0f);
+            facingLeft = false;
+            facingRight = true;
+        }
+        if(Input.GetAxis("Horizontal") < 0f)
+        {
+            transform.eulerAngles = new Vector3(0f,180f,0f);
+            facingRight = false;
+            facingLeft = true;
+        }
         if(rb.velocity.y > 0 && isJumping == true)
         {
             ChangeAnimationState("Player_JumpUp");
@@ -150,15 +162,17 @@ public class Player : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.LeftShift) && canDash)
         {
-/*             if(dashUnlocked && !isJumping)
+            if(dashUnlocked && !isJumping)
             {
                 StartCoroutine(DashCode());
             }
             if (dashUnlocked && jumpDashUnlocked)
             {
+                float originalGravity = rb.gravityScale;
                 StartCoroutine(DashCode());
-            } */
-            StartCoroutine(DashCode());
+                //isJumping = false;
+                rb.gravityScale = originalGravity;
+            }
         }
     }
     private IEnumerator DashCode()
@@ -168,55 +182,38 @@ public class Player : MonoBehaviour
         canDash = false;
         isDashing = true;
         float originalGravity = rb.gravityScale;
-        rb.gravityScale = 0f;
+        //rb.gravityScale = 0f;
         rb.velocity = new Vector2(0f, 0f);
+        rb.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
         rb.AddForce(new Vector2(dashingPower, 0f));
-        //rb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
         tr.emitting = true;
         yield return new WaitForSeconds(dashingTime);
-        rb.velocity = new Vector2(0f, 0f);
-        rb.totalForce = new Vector2(0f,0f);
+        rb.constraints = originalConstraints;
         tr.emitting = false;
         rb.gravityScale = originalGravity;
         isDashing = false;
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true;
-        //speed = 8f;
-        //rb.velocity = new Vector3(0f,0f,0f);
-        //myVector = new Vector3(10.0f, 0.0f, 0.0f);
-        //rb.velocity = myVector * dashingPower;
-        //ChangeAnimationState("Player_Dash");
         }
+
         else if (facingLeft == true)
         {
 
         canDash = false;
         isDashing = true;
         float originalGravity = rb.gravityScale;
-        rb.gravityScale = 0f;
+        //rb.gravityScale = 0f;
         rb.velocity = new Vector2(0f, 0f);
+        rb.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
         rb.AddForce(new Vector2(-dashingPower, 0f));
-        rb.constraints &= RigidbodyConstraints2D.FreezePositionY;
-        rb.constraints &= RigidbodyConstraints2D.FreezeRotation;
-        //rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-        //rb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
         tr.emitting = true;
-        //rb.constraints = RigidbodyConstraints2D.;
         yield return new WaitForSeconds(dashingTime);
         rb.constraints = originalConstraints;
-        rb.velocity = new Vector2(0f, 0f);
-        rb.totalForce = new Vector2(0f,0f);
         tr.emitting = false;
         rb.gravityScale = originalGravity;
         isDashing = false;
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true;
-        //speed = 8f;
-        //rb.velocity = new Vector3(0f,0f,0f);
-        //myVector = new Vector3(10.0f, 0.0f, 0.0f);
-        //rb.velocity = myVector * dashingPower;
-        //ChangeAnimationState("Player_Dash");
-            
         }
     }
 }
