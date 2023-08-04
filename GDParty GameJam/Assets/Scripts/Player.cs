@@ -26,6 +26,18 @@ public class Player : MonoBehaviour
    private RigidbodyConstraints2D originalConstraints;
    [SerializeField] private TrailRenderer tr;
 
+
+   //Raycast
+   private CapsuleCollider2D cc;
+   private Vector2 colliderSize;
+    [SerializeField]
+    private LayerMask whatIsGround;
+
+
+
+
+
+
    void Awake()
    {
     originalConstraints = rb.constraints;
@@ -34,6 +46,8 @@ public class Player : MonoBehaviour
    {
         anim = GetComponent<Animator>();
         isJumping = false;
+        cc = GetComponent<CapsuleCollider2D>();
+        colliderSize = cc.size;
    }
 
    void FixedUpdate()
@@ -44,6 +58,7 @@ public class Player : MonoBehaviour
             return;
         }
         // ChangeAnimationState("Player_Jump");
+        
    }
 
    void Update()
@@ -55,6 +70,10 @@ public class Player : MonoBehaviour
         Dash();
         Jump();
         Pausou();
+   }
+   private void SlopeCheck()
+   {
+
    }
 
 /*    private void OnCollisionEnter2D(Collision2D other)
