@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
    public bool doubleJumpUnlocked = false;
    public bool doubleJump = false;
    //Dash
+   public int dashCount = 0;
    public bool dashUnlocked = false, jumpDashUnlocked = false;
    private Vector3 myVector;
    private bool canDash = true;
@@ -56,11 +57,12 @@ public class Player : MonoBehaviour
         Pausou();
    }
 
-   private void OnCollisionEnter2D(Collision2D other)
+/*    private void OnCollisionEnter2D(Collision2D other)
    {
         if (other.gameObject.CompareTag("ground"))
         {
             isJumping = false;
+            dashCount=0;
         }
 
         if (other.gameObject.CompareTag("obstacle"))
@@ -75,6 +77,19 @@ public class Player : MonoBehaviour
         if(other.gameObject.CompareTag("ground"))
         {
             isJumping = true;
+        }
+   } */
+   private void OnTriggerEnter2D(Collider2D other) {
+        if (other.gameObject.CompareTag("ground"))
+        {
+            isJumping=false;
+            dashCount=0;
+        }
+   }
+   private void OnTriggerExit2D(Collider2D other) {
+        if(other.gameObject.CompareTag("ground"))
+        {
+            isJumping= true;
         }
    }
 
@@ -168,10 +183,13 @@ public class Player : MonoBehaviour
             }
             if (dashUnlocked && jumpDashUnlocked)
             {
+                if(dashCount == 0)
+                {
                 float originalGravity = rb.gravityScale;
                 StartCoroutine(DashCode());
-                //isJumping = false;
                 rb.gravityScale = originalGravity;
+                dashCount +=1;
+                }
             }
         }
     }
