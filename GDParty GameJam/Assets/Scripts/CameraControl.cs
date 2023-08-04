@@ -24,7 +24,10 @@ public class CameraControl : MonoBehaviour
         target = GameObject.FindGameObjectWithTag("Player").transform;
         cam = GetComponent<Camera>();
         volume = GetComponent<Volume>();
-        volume.profile.TryGet(out vignette);
+        if (volume)
+        {
+            volume.profile.TryGet(out vignette);
+        }
     }
 
     void Update()
@@ -35,8 +38,10 @@ public class CameraControl : MonoBehaviour
     private void FixedUpdate()
     {
         Follow();
-        vignette.intensity.value += aceleracaoDaIntensidade / 100 * Time.deltaTime;
-        vignette.center.value = cam.WorldToViewportPoint(target.position);
+        if (volume)
+        {
+            VignetteFollow();
+        }
     }
 
     void Follow()
@@ -44,6 +49,12 @@ public class CameraControl : MonoBehaviour
         Vector3 targetPosition = target.position + offset;
         Vector3 smoothPosition = Vector3.Lerp(transform.position, targetPosition, smoothFactor * Time.fixedDeltaTime);
         transform.position = smoothPosition;
+    }
+
+    void VignetteFollow()
+    {
+        vignette.intensity.value += aceleracaoDaIntensidade / 100 * Time.deltaTime;
+        vignette.center.value = cam.WorldToViewportPoint(target.position);
     }
 
 
