@@ -1431,8 +1431,8 @@ MonoBehaviour:
   doubleJumpUnlocked: 1
   doubleJump: 0
   dashCount: 0
-  dashUnlocked: 0
-  jumpDashUnlocked: 0
+  dashUnlocked: 1
+  jumpDashUnlocked: 1
   facingRight: 0
   facingLeft: 0
   tr: {fileID: 1341933951}
