@@ -7,6 +7,8 @@ TagManager:
   - ground
   - obstacle
   - edge
+  - NotaDireita
+  - NotaEsquerda
   layers:
   - Default
   - TransparentFX
@@ -17,8 +19,8 @@ TagManager:
   - Ground
   - Player
   - Edge
-  - 
-  - 
+  - NotaDireita
+  - NotaEsquerda
   - 
   - 
   - 
@@ -43,4 +45,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Minigame Dot
+    uniqueID: 4244528409
     locked: 0
