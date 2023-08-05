@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerRespawn : MonoBehaviour
 {
+    public bool dead = false;
     public Vector3 respawnPoint;
     // Start is called before the first frame update
     public void RespawnNow()
@@ -15,8 +16,7 @@ public class PlayerRespawn : MonoBehaviour
     {
         if (other.gameObject.tag == "obstacle")
         {
-            Debug.Log("ue");
-            RespawnNow();
+            dead = true;
         }
     }
 }
