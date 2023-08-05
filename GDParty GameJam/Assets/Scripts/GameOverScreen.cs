@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class GameOverScreen : MonoBehaviour
 {
     public PlayerRespawn player;
-    public bool isDead;
+    public bool isDead, gameOverActive = false;
     public GameObject gameOver;
     public GameObject playerDoido;
     // Update is called once per frame
@@ -24,14 +24,16 @@ public class GameOverScreen : MonoBehaviour
             Debug.Log("morto");
             gameOver.SetActive(true);
             Time.timeScale = 0;
+            gameOverActive = true;
         }
     }
     public void RestartButton()
     {
-        Debug.Log("restat");
+        Debug.Log("restart");
         player.gameObject.GetComponent<PlayerRespawn>().dead = false;
         gameOver.SetActive(false);
         Time.timeScale = 1;
         player.RespawnNow();
+        gameOverActive = false;
     }
 }
