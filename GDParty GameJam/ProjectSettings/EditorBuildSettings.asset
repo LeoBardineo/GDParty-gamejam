@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Desenv_2 - Onde tem o mapa.unity
     guid: eb7b64c3e80ea5d4b99a67c4cdc0b84e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Desenv_3.unity
     guid: c2057c5d2196c804ebd7bfbba1dae950
   m_configObjects: {}
