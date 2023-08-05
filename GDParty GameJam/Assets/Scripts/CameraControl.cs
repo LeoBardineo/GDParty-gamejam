@@ -18,6 +18,7 @@ public class CameraControl : MonoBehaviour
     Volume volume;
     Vignette vignette;
     [SerializeField] float aceleracaoDaIntensidade;
+    [SerializeField] GameObject redemoinho;
 
     void Start()
     {
@@ -27,6 +28,7 @@ public class CameraControl : MonoBehaviour
         if (volume)
         {
             volume.profile.TryGet(out vignette);
+            vignette.intensity.value = 0f;
         }
     }
 
@@ -55,6 +57,15 @@ public class CameraControl : MonoBehaviour
     {
         vignette.intensity.value += aceleracaoDaIntensidade / 100 * Time.deltaTime;
         vignette.center.value = cam.WorldToViewportPoint(target.position);
+        float escala = 1.6f * Mathf.Pow(vignette.intensity.value, 2) - 3.2f * vignette.intensity.value + 2f;
+        redemoinho.transform.localScale = new Vector2(escala, escala);
+    }
+
+    void ChecaMortePorEstresse()
+    {
+        // if(estresse != 1f) return;
+        // WaitForSeconds(segundosAteMorrer);
+        // if(estresse == 1f) Morrer();
     }
 
 
