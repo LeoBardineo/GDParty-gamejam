@@ -32,6 +32,7 @@ public class Player : MonoBehaviour
     private CapsuleCollider2D capsuleCollider;
     void Start()
     {
+        jump = 500;
         anim = GetComponent<Animator>();
         isJumping = false;
         originalConstraints = rb.constraints;
@@ -205,7 +206,7 @@ public class Player : MonoBehaviour
             {
                 StartCoroutine(DashCode());
             }
-            if (dashUnlocked && jumpDashUnlocked)
+            if (dashUnlocked && jumpDashUnlocked && isJumping)
             {
                 if (dashCount == 0)
                 {
