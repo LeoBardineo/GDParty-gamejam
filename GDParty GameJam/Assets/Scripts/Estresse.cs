@@ -6,10 +6,11 @@ using UnityEngine.Rendering.Universal;
 
 public class Estresse : MonoBehaviour
 {
-    [SerializeField] float barraDeEstresse;
-    [SerializeField] float aceleracaoDoEstresse, aceleracaoDaMeditacao;
+    [SerializeField][Range(0f, 100f)] float barraDeEstresse;
+    public float aceleracaoDoEstresse, aceleracaoDaMeditacao;
     public static bool isEstresseResetando;
     public static float vignetteThreshold = 70f;
+    public bool lockEstresse = true;
 
     void Start()
     {
@@ -20,6 +21,8 @@ public class Estresse : MonoBehaviour
     void Update()
     {
         // refazer, tenq ser baseado na qtd de pontos acertados
+        // colocar o vignette value = barraDeEstresse
+        if (lockEstresse) return;
         if (Input.GetKeyDown(KeyCode.Home))
         {
             isEstresseResetando = !isEstresseResetando;

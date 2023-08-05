@@ -18,7 +18,7 @@ public class CameraControl : MonoBehaviour
     Volume volume;
     public static Vignette vignette;
     public static bool isMuitoEstressado = false;
-    [SerializeField] float aceleracaoDaIntensidade;
+    public float aceleracaoDaIntensidade;
     [SerializeField] float aceleracaoDaMeditacao;
     [SerializeField] GameObject redemoinho;
 
