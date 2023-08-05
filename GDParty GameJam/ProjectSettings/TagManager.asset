@@ -9,6 +9,8 @@ TagManager:
   - edge
   - NotaDireita
   - NotaEsquerda
+  - death
+  - checkpoint
   layers:
   - Default
   - TransparentFX
