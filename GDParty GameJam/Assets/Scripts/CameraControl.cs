@@ -16,8 +16,10 @@ public class CameraControl : MonoBehaviour
 
     [Header("Estresse")]
     Volume volume;
-    Vignette vignette;
+    public static Vignette vignette;
+    public static bool isMuitoEstressado = false;
     [SerializeField] float aceleracaoDaIntensidade;
+    [SerializeField] float aceleracaoDaMeditacao;
     [SerializeField] GameObject redemoinho;
 
     void Start()
@@ -55,7 +57,15 @@ public class CameraControl : MonoBehaviour
 
     void VignetteFollow()
     {
-        vignette.intensity.value += aceleracaoDaIntensidade / 100 * Time.deltaTime;
+        if (isMuitoEstressado && !Estresse.isEstresseResetando)
+        {
+            vignette.intensity.value += aceleracaoDaIntensidade / 100 * Time.deltaTime;
+        }
+        else if (Estresse.isEstresseResetando && vignette.intensity.value >= 0f)
+        {
+            vignette.intensity.value -= aceleracaoDaMeditacao / 100 * Time.deltaTime;
+        }
+
         vignette.center.value = cam.WorldToViewportPoint(target.position);
         float escala = 1.6f * Mathf.Pow(vignette.intensity.value, 2) - 3.2f * vignette.intensity.value + 2f;
         redemoinho.transform.localScale = new Vector2(escala, escala);
@@ -63,6 +73,7 @@ public class CameraControl : MonoBehaviour
 
     void ChecaMortePorEstresse()
     {
+        if (!isMuitoEstressado) return;
         // if(estresse != 1f) return;
         // WaitForSeconds(segundosAteMorrer);
         // if(estresse == 1f) Morrer();

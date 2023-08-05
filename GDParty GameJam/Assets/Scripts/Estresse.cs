@@ -6,18 +6,59 @@ using UnityEngine.Rendering.Universal;
 
 public class Estresse : MonoBehaviour
 {
-    // [SerializeField] [Range(0, 100)] int intesidade;
-    // [SerializeField] Vignette vignette;
-    // [SerializeField] Volume volume;
+    [SerializeField] float barraDeEstresse;
+    [SerializeField] float aceleracaoDoEstresse, aceleracaoDaMeditacao;
+    public static bool isEstresseResetando;
+    public static float vignetteThreshold = 70f;
 
     void Start()
     {
-        // volume = CameraControl.gameObject.GetComponent<Volume>();
-        // volume.profile.TryGet(out vignette);
+        isEstresseResetando = false;
+        barraDeEstresse = 0f;
     }
 
     void Update()
     {
-        // baseado na intensidade, aproximar o vignette do player e fade no redemoinho
+        // refazer, tenq ser baseado na qtd de pontos acertados
+        if (Input.GetKeyDown(KeyCode.Home))
+        {
+            isEstresseResetando = !isEstresseResetando;
+        }
+
+        if (isEstresseResetando && barraDeEstresse >= 0f)
+        {
+            barraDeEstresse -= aceleracaoDaMeditacao * Time.deltaTime;
+            if (barraDeEstresse <= vignetteThreshold)
+            {
+                CameraControl.isMuitoEstressado = false;
+                if (barraDeEstresse <= 0f)
+                {
+                    isEstresseResetando = false;
+                }
+            }
+        }
+        else if (!isEstresseResetando && barraDeEstresse <= 100f)
+        {
+            barraDeEstresse += aceleracaoDoEstresse * Time.deltaTime;
+            if (barraDeEstresse > vignetteThreshold)
+            {
+                CameraControl.isMuitoEstressado = true;
+                if (barraDeEstresse >= 100f)
+                {
+                    // Player.Morrer();
+                }
+            }
+            else
+            {
+                CameraControl.isMuitoEstressado = false;
+            }
+
+        }
+
+    }
+
+    void ResetarOEstresse()
+    {
+        isEstresseResetando = true;
     }
 }
