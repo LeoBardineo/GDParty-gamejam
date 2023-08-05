@@ -45,7 +45,7 @@ public class ActivatorEsquerda : MonoBehaviour
     void OnTriggerExit2D(Collider2D col)
     {
         active = false;
-        Destroy(note,0.5f);
+        Destroy(note);
     }
 
     IEnumerator Pressed()
