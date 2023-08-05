@@ -38,7 +38,6 @@ public class ActivatorEsquerda : MonoBehaviour
         if(col.gameObject.tag == "NotaEsquerda")
         {
             active = true;
-            Debug.Log("Bateu na esquerda");
             note = col.gameObject;
         }
     }
