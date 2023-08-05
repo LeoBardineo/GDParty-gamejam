@@ -11,6 +11,7 @@ TagManager:
   - NotaEsquerda
   - death
   - checkpoint
+  - alma
   layers:
   - Default
   - TransparentFX

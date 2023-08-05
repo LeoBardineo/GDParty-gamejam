@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
     private bool isDashing;
     private float dashingPower = 7200f;
     private float dashingTime = 0.09f;
-    private float dashingCooldown = 0.7f;
+    private float dashingCooldown = 0.2f;
     public bool facingRight = true, facingLeft;
     private RigidbodyConstraints2D originalConstraints;
     [SerializeField] private TrailRenderer tr;
