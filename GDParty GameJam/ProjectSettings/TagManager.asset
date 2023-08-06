@@ -12,6 +12,9 @@ TagManager:
   - death
   - checkpoint
   - alma
+  - MusicaMenu
+  - MusicaJogo1
+  - MusicaJogo2
   layers:
   - Default
   - TransparentFX

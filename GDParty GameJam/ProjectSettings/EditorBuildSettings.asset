@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 9bbb15b6d4a0dc24d8e5cd3cce03c48c
+  - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 03d1bf625ef64664bb8b80b3008cb8de
   - enabled: 1
@@ -14,7 +17,34 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Desenv_2 - Onde tem o mapa.unity
     guid: eb7b64c3e80ea5d4b99a67c4cdc0b84e
-  - enabled: 0
-    path: Assets/Scenes/Desenv_3.unity
-    guid: c2057c5d2196c804ebd7bfbba1dae950
+  - enabled: 1
+    path: Assets/Scenes/AAAAAA.unity
+    guid: 36c4182d871cb1146b0ddb39aa429b04
+  - enabled: 1
+    path: Assets/Scenes/Desenv_ 3-2- Laboratorio de checkpoints.unity
+    guid: 18466a9db05b97e46a0c40995ba83572
+  - enabled: 1
+    path: Assets/Scenes/Desenv_ 3-3 - Tela de GO.unity
+    guid: ec14d51892a52cf449e86d26d3e1b126
+  - enabled: 1
+    path: Assets/Scenes/Desenv_ 3-4 - Implementando mapa e etc 1.unity
+    guid: 273b1918b89ae594a921cd1139472b87
+  - enabled: 1
+    path: Assets/Scenes/Desenv_ 3-5 - Teste do Player Prefab.unity
+    guid: b43e656ef60b2a643bf5bde8a33dd692
+  - enabled: 1
+    path: Assets/Scenes/Desenv_ 3-6 - teste de dialogos.unity
+    guid: 0fe4fe5c53752f14ea2696fbbf3be586
+  - enabled: 1
+    path: Assets/Scenes/Desenv_3 - Laboratorio maluco.unity
+    guid: aa08f1a414f98ca458eff9e513209b60
+  - enabled: 1
+    path: Assets/Scenes/Desenv_4.unity
+    guid: 29f767c6c8a2a1745b3c76a861b16ec4
+  - enabled: 1
+    path: Assets/Scenes/JOGO.unity
+    guid: 08adfeb8503882547af3413d44d12e1c
+  - enabled: 1
+    path: Assets/Scenes/TESTE MINIGAME.unity
+    guid: 8ecb7a016e1756840bdaa09992201304
   m_configObjects: {}
