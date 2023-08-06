@@ -5,26 +5,24 @@ using UnityEngine;
 public class Estalactite : MonoBehaviour
 {
     Rigidbody2D rb;
-    public bool grounded = false;
-    private float initialY;
+    Animator anim;
+    public bool quebrou = false;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         rb.gravityScale = 0;
-        initialY = transform.position.y;
     }
 
     void Update()
     {
-        if (!grounded)
-        {
-            RayCastPlayer();
-        }
+        RayCastPlayer();
     }
 
     public void RayCastPlayer()
     {
+        if (quebrou) return;
         Debug.DrawRay(transform.position, -Vector2.up * 10, Color.white, 0);
         RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up, 10, LayerMask.GetMask("Player"));
         if (hit.collider != null && hit.collider.gameObject.tag == "Player")
@@ -36,17 +34,15 @@ public class Estalactite : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "ground")
+        if (quebrou) return;
+        if (collision.gameObject.tag == "Player")
         {
-            grounded = true;
-            Debug.LogError(grounded);
+            // Player morreu!
         }
-        else if (collision.gameObject.tag == "Player" && !grounded)
-        {
-            Debug.LogError("hitou player");
-            Destroy(gameObject);
-        }
-        // tocar a animação de destruir e destruir após a animation.length, Destroy(gameObject, animation.length)
+        quebrou = true;
+        rb.gravityScale = 0;
+        anim.Play("Estalactite quebrando");
+        Destroy(gameObject, 0.4f);
     }
 
 }
