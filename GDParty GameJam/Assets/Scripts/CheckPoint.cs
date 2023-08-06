@@ -6,12 +6,19 @@ public class CheckPoint : MonoBehaviour
 {
     // Start is called before the first frame update
     private bool canMeditate;
+    MeditationController meditationController;
+
+    void Start()
+    {
+        meditationController = MeditationController.GetMeditationController();
+    }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && this.canMeditate == true)
         {
             Player.respawnPoint = this.transform.position;
+            meditationController.IniciarMinigame();
         }
     }
 

@@ -22,20 +22,21 @@ public class ActivatorEsquerda : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(key))
+        if (Input.GetKeyDown(key))
         {
             StartCoroutine(Pressed());
         }
 
-        if(Input.GetKeyDown(key) && active == true)
+        if (Input.GetKeyDown(key) && active == true)
         {
+            MeditationController.pontos += 1;
             Destroy(note);
         }
     }
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.tag == "NotaEsquerda")
+        if (col.gameObject.tag == "NotaEsquerda")
         {
             active = true;
             note = col.gameObject;

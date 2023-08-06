@@ -22,20 +22,21 @@ public class ActivatorDireita : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(key))
+        if (Input.GetKeyDown(key))
         {
             StartCoroutine(Pressed());
         }
 
-        if(Input.GetKeyDown(key) && active == true)
+        if (Input.GetKeyDown(key) && active == true)
         {
+            MeditationController.pontos += 1;
             Destroy(note);
         }
     }
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.tag == "NotaDireita")
+        if (col.gameObject.tag == "NotaDireita")
         {
             active = true;
             note = col.gameObject;

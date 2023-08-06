@@ -70,6 +70,7 @@ public class Estresse : MonoBehaviour
     public void DescontarEstresse(float porcentagemDeAcerto)
     {
         minEstresse = barraDeEstresse * (1f - porcentagemDeAcerto);
+        Debug.LogWarning(minEstresse);
         isEstresseResetando = true;
     }
 

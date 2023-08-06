@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     public static Vector3 respawnPoint;
     public static int almasColetadas;
     public Estresse estresse;
+    public bool isMeditando;
     private Animator anim;
     private string currentState;
 
@@ -55,6 +56,7 @@ public class Player : MonoBehaviour
         anim = GetComponent<Animator>();
         isJumping = false;
         inDialogo = false;
+        isMeditando = false;
         originalConstraints = rb.constraints;
         capsuleCollider = GetComponent<CapsuleCollider2D>();
         estresse = GetComponent<Estresse>();
@@ -64,6 +66,7 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (isMeditando) return;
         if (inDialogo)
         {
             ChangeAnimationState("Player_Idle");
@@ -78,7 +81,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         Pausou();
-        if (isDashing || inDialogo) return;
+        if (isDashing || inDialogo || isMeditando) return;
         Dash();
         Jump();
     }
@@ -144,7 +147,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    void ChangeAnimationState(string newState)
+    public void ChangeAnimationState(string newState)
     {
         if (currentState == newState) return;
         anim.Play(newState);
