@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [Header("Geral")]
+    public int puloCheckAudio;
     public float speed;
     public float jump;
     public bool isJumping, Paused;
@@ -36,6 +37,8 @@ public class Player : MonoBehaviour
     public GameObject gameOver;
     private bool teste;
 
+    [Header("Audio")]
+    public AudioClip pulo, puloDuplo, dash, aterrissar, gameLoop;
     //Raycast
     //Tentativa de corrigir bordas
     private CapsuleCollider2D capsuleCollider;
@@ -118,6 +121,11 @@ public class Player : MonoBehaviour
         {
             isJumping = false;
             dashCount = 0;
+            if (puloCheckAudio == 1)
+            {
+                AudioSource.PlayClipAtPoint(aterrissar, this.transform.position, 100f);
+                puloCheckAudio = 0;
+            }
         }
     }
     private void OnTriggerExit2D(Collider2D other)
@@ -164,12 +172,15 @@ public class Player : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump") && isJumping == false)
         {
+            AudioSource.PlayClipAtPoint(pulo, this.transform.position, 100f);
             rb.velocity = new Vector2(rb.velocity.y, 0f);
             rb.AddForce(new Vector2(rb.velocity.x, jump));
             doubleJump = true;
+            puloCheckAudio = 1;
         }
         if (Input.GetButtonDown("Jump") && isJumping == true && doubleJump == true && doubleJumpUnlocked == true)
         {
+            AudioSource.PlayClipAtPoint(puloDuplo, this.transform.position, 100f);
             rb.velocity = new Vector2(rb.velocity.y, 0f);
             rb.velocity = new Vector2(rb.velocity.x, 0f);
             rb.AddForce(new Vector2(rb.velocity.x, jump));
@@ -230,6 +241,7 @@ public class Player : MonoBehaviour
     }
     private IEnumerator DashCode()
     {
+        AudioSource.PlayClipAtPoint(dash, this.transform.position, 100f);
         if (facingRight == true)
         {
             canDash = false;
