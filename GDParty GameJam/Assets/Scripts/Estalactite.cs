@@ -7,6 +7,7 @@ public class Estalactite : MonoBehaviour
     Rigidbody2D rb;
     Animator anim;
     public bool quebrou = false;
+    public float gravidadeAoCair = 1;
 
     void Start()
     {
@@ -28,7 +29,7 @@ public class Estalactite : MonoBehaviour
         if (hit.collider != null && hit.collider.gameObject.tag == "Player")
         {
             Debug.DrawRay(transform.position, -Vector2.up * 10, Color.red, 0);
-            rb.gravityScale = 1;
+            rb.gravityScale = gravidadeAoCair;
         }
     }
 
