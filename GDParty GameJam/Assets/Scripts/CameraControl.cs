@@ -27,8 +27,9 @@ public class CameraControl : MonoBehaviour
         target = GameObject.FindGameObjectWithTag("Player").transform;
         cam = GetComponent<Camera>();
         volume = GetComponent<Volume>();
-        if (volume)
+        if (volume != null)
         {
+            redemoinho.SetActive(true);
             volume.profile.TryGet(out vignette);
             vignette.intensity.value = 0f;
         }
@@ -67,7 +68,8 @@ public class CameraControl : MonoBehaviour
         // }
 
         vignette.center.value = cam.WorldToViewportPoint(target.position);
-        float escala = 1.6f * Mathf.Pow(vignette.intensity.value, 2) - 3.2f * vignette.intensity.value + 2f;
+
+        float escala = 3.65714f * Mathf.Pow(vignette.intensity.value, 2) - 8.57714f * vignette.intensity.value + 6.09714f;
         redemoinho.transform.localScale = new Vector2(escala, escala);
     }
 

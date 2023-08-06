@@ -84,6 +84,7 @@ public class Alma : MonoBehaviour
         textoTM.text = txtDialogo;
         Player.inDialogo = true;
         dialogo.SetActive(true);
+        Estresse.lockEstresse = true;
         dialogoFinalizou = false;
     }
 
@@ -106,6 +107,7 @@ public class Alma : MonoBehaviour
     {
         Player.inDialogo = false;
         dialogo.SetActive(false);
+        Estresse.lockEstresse = false;
         dialogoFinalizou = true;
     }
 }

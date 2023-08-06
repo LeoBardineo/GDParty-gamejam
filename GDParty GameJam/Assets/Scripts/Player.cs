@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     public Rigidbody2D rb;
     public static Vector3 respawnPoint;
     public static int almasColetadas;
+    public Estresse estresse;
     private Animator anim;
     private string currentState;
 
@@ -56,6 +57,7 @@ public class Player : MonoBehaviour
         inDialogo = false;
         originalConstraints = rb.constraints;
         capsuleCollider = GetComponent<CapsuleCollider2D>();
+        estresse = GetComponent<Estresse>();
         respawnPoint = transform.position;
         //capsuleCollider.sharedMaterial.friction = 2;
     }
@@ -297,14 +299,16 @@ public class Player : MonoBehaviour
     {
         isDead = true;
         gameOver.SetActive(true);
+        Estresse.lockEstresse = true;
         Time.timeScale = 0;
     }
 
     public void Respawnar()
     {
-        Debug.Log("restart");
         isDead = false;
         gameOver.SetActive(false);
+        Estresse.lockEstresse = false;
+        estresse.ResetarOEstresse();
         Time.timeScale = 1;
         transform.position = respawnPoint;
     }
