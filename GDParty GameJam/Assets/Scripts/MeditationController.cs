@@ -21,6 +21,6 @@ public class MeditationController : MonoBehaviour
         { 
             upalumpa = Instantiate(minigame, new Vector3(player.transform.position.x, player.transform.position.y + 4.5f, 0f), Quaternion.identity);
         }
-        Destroy(upalumpa,3.5f);
+        Destroy(upalumpa,30.5f);
     }
 }
