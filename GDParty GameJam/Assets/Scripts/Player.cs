@@ -38,7 +38,7 @@ public class Player : MonoBehaviour
     private bool teste;
 
     [Header("Audio")]
-    public AudioClip pulo, puloDuplo, dash, aterrissar, gameLoop;
+    public AudioClip pulo, puloDuplo, dash, aterrissar;
     //Raycast
     //Tentativa de corrigir bordas
     private CapsuleCollider2D capsuleCollider;
