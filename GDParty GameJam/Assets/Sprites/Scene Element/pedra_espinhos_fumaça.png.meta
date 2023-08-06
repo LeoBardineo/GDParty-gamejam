@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "pedra_espinhos_fuma\xE7a_0"
+      name: Espinho
       rect:
         serializedVersion: 2
         x: 0
@@ -118,7 +118,7 @@ TextureImporter:
         width: 472
         height: 429
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -131,7 +131,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "pedra_espinhos_fuma\xE7a_1"
+      name: estalactite 0
       rect:
         serializedVersion: 2
         x: 482
@@ -139,7 +139,7 @@ TextureImporter:
         width: 261
         height: 441
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,7 +152,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "pedra_espinhos_fuma\xE7a_2"
+      name: "fuma\xE7a 0"
       rect:
         serializedVersion: 2
         x: 7
@@ -160,7 +160,7 @@ TextureImporter:
         width: 892
         height: 873
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -173,7 +173,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "pedra_espinhos_fuma\xE7a_3"
+      name: "fuma\xE7a 1"
       rect:
         serializedVersion: 2
         x: 1020
@@ -181,7 +181,7 @@ TextureImporter:
         width: 873
         height: 975
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,7 +194,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "pedra_espinhos_fuma\xE7a_4"
+      name: "fuma\xE7a 2"
       rect:
         serializedVersion: 2
         x: 0
@@ -202,7 +202,7 @@ TextureImporter:
         width: 1000
         height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -215,7 +215,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "pedra_espinhos_fuma\xE7a_5"
+      name: "fuma\xE7a 3"
       rect:
         serializedVersion: 2
         x: 1000
@@ -223,7 +223,7 @@ TextureImporter:
         width: 1000
         height: 1000
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -236,7 +236,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "pedra_espinhos_fuma\xE7a_6"
+      name: estalactite 1
       rect:
         serializedVersion: 2
         x: 803
@@ -244,7 +244,7 @@ TextureImporter:
         width: 359
         height: 433
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -257,7 +257,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "pedra_espinhos_fuma\xE7a_7"
+      name: estalactite 2
       rect:
         serializedVersion: 2
         x: 1224
@@ -265,7 +265,7 @@ TextureImporter:
         width: 373
         height: 431
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -278,15 +278,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "pedra_espinhos_fuma\xE7a_8"
+      name: estalactite 3
       rect:
         serializedVersion: 2
-        x: 1611
+        x: 1606
         y: 3385
         width: 345
         height: 421
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -309,15 +309,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "pedra_espinhos_fuma\xE7a_0": 825357229
-      "pedra_espinhos_fuma\xE7a_1": 650349896
-      "pedra_espinhos_fuma\xE7a_2": -2005114910
-      "pedra_espinhos_fuma\xE7a_3": -1536532730
-      "pedra_espinhos_fuma\xE7a_4": 1064498757
-      "pedra_espinhos_fuma\xE7a_5": -620942553
-      "pedra_espinhos_fuma\xE7a_6": -1624118686
-      "pedra_espinhos_fuma\xE7a_7": 1803546793
-      "pedra_espinhos_fuma\xE7a_8": 316183507
+      Espinho: 825357229
+      estalactite 0: 650349896
+      estalactite 1: -1624118686
+      estalactite 2: 1803546793
+      estalactite 3: 316183507
+      "fuma\xE7a 0": -2005114910
+      "fuma\xE7a 1": -1536532730
+      "fuma\xE7a 2": 1064498757
+      "fuma\xE7a 3": -620942553
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
