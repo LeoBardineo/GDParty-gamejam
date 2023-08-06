@@ -113,9 +113,9 @@ TextureImporter:
       name: "medita\xE7ao 0"
       rect:
         serializedVersion: 2
-        x: 593
-        y: 5542
-        width: 393
+        x: 485
+        y: 5546
+        width: 629
         height: 1172
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -137,7 +137,7 @@ TextureImporter:
         x: 1191
         y: 5587
         width: 629
-        height: 1083
+        height: 1172
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: "medita\xE7ao 2"
       rect:
         serializedVersion: 2
-        x: 1948
-        y: 5556
-        width: 555
-        height: 905
+        x: 1951
+        y: 5559
+        width: 629
+        height: 1172
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +176,10 @@ TextureImporter:
       name: "medita\xE7ao 3"
       rect:
         serializedVersion: 2
-        x: 2722
-        y: 5556
-        width: 522
-        height: 841
+        x: 2665
+        y: 5552
+        width: 629
+        height: 1172
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: "medita\xE7ao 4"
       rect:
         serializedVersion: 2
-        x: 3421
+        x: 3422
         y: 5556
-        width: 578
-        height: 841
+        width: 629
+        height: 1172
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

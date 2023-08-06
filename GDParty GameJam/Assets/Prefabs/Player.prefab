@@ -393,6 +393,7 @@ MonoBehaviour:
   speed: 8
   isJumping: 0
   rb: {fileID: 2860892027024341867}
+  estresse: {fileID: 0}
   dashCount: 0
   facingRight: 0
   facingLeft: 0
@@ -418,7 +419,7 @@ MonoBehaviour:
   aceleracaoDoEstresse: 1
   aceleracaoDaMeditacao: 5
   minEstresse: 0
-  lockEstresse: 0
+  segundosAteMorrerPorEstresse: 5
 --- !u!95 &6446691382457859314
 Animator:
   serializedVersion: 5
