@@ -17,8 +17,7 @@ public class Victory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        almaNum = player.GetComponent<AlmaResgate>().almasColetadas;
-        almasColetadas.text = almaNum + "/6";
+
     }
 
     void OnTriggerEnter2D(Collider2D other)

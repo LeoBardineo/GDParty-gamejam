@@ -11,7 +11,6 @@ public class CheckPoint : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && this.canMeditate == true)
         {
-            Debug.Log("Eitacomomedita");
             Player.respawnPoint = this.transform.position;
         }
     }
@@ -21,7 +20,6 @@ public class CheckPoint : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
-            Debug.Log("Uiuitabatendo");
             this.canMeditate = true;
         }
     }
@@ -29,7 +27,6 @@ public class CheckPoint : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
-            Debug.Log("Saiu da Meditacao");
             this.canMeditate = false;
         }
     }

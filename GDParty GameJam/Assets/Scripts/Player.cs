@@ -7,21 +7,24 @@ public class Player : MonoBehaviour
     [Header("Geral")]
     public int puloCheckAudio;
     public float speed;
-    public float jump;
-    public bool isJumping, Paused;
+    public static float jump;
+    public bool isJumping;
+    public static bool Paused;
     public static bool isDead = false;
+    public static bool inDialogo = false;
     public Rigidbody2D rb;
     public static Vector3 respawnPoint;
+    public static int almasColetadas;
     private Animator anim;
     private string currentState;
 
     [Header("Double Jump")]
-    public bool doubleJumpUnlocked = false;
-    public bool doubleJump = false;
+    public static bool doubleJumpUnlocked = false;
+    public static bool doubleJump = false;
 
     [Header("Dash")]
     public int dashCount = 0;
-    public bool dashUnlocked = false, jumpDashUnlocked = false;
+    public static bool dashUnlocked = false, jumpDashUnlocked = false;
     private Vector3 myVector;
     private bool canDash = true;
     private bool isDashing;
@@ -38,7 +41,10 @@ public class Player : MonoBehaviour
     private bool teste;
 
     [Header("Audio")]
-    public AudioClip pulo, puloDuplo, dash, aterrissar;
+    public AudioClip pulo;
+    public AudioClip puloDuplo;
+    public AudioClip dash;
+    public AudioClip aterrissar;
     //Raycast
     //Tentativa de corrigir bordas
     private CapsuleCollider2D capsuleCollider;
@@ -47,6 +53,7 @@ public class Player : MonoBehaviour
         jump = 500;
         anim = GetComponent<Animator>();
         isJumping = false;
+        inDialogo = false;
         originalConstraints = rb.constraints;
         capsuleCollider = GetComponent<CapsuleCollider2D>();
         respawnPoint = transform.position;
@@ -55,24 +62,23 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-        Move();
-        if (isDashing)
+        if (inDialogo)
         {
+            ChangeAnimationState("Player_Idle");
             return;
         }
+        Move();
+        if (isDashing) return;
         // ChangeAnimationState("Player_Jump");
 
     }
 
     void Update()
     {
-        if (isDashing)
-        {
-            return;
-        }
+        Pausou();
+        if (isDashing || inDialogo) return;
         Dash();
         Jump();
-        Pausou();
     }
 
     private void OnCollisionEnter2D(Collision2D other)
