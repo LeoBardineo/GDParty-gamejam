@@ -6,12 +6,11 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
-    public PlayerRespawn player;
     public GameObject pauseMenuUI;
 
     void Update()
     {
-        if (player.gameObject.GetComponent<PlayerRespawn>().dead == false)
+        if (!Player.isDead)
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {

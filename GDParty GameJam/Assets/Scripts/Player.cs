@@ -4,16 +4,21 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float speed, jump;
+    [Header("Geral")]
+    public float speed;
+    public float jump;
     public bool isJumping, Paused;
-    // private float Move;
+    public static bool isDead = false;
     public Rigidbody2D rb;
+    public static Vector3 respawnPoint;
     private Animator anim;
     private string currentState;
-    //DoubleJump
+
+    [Header("Double Jump")]
     public bool doubleJumpUnlocked = false;
     public bool doubleJump = false;
-    //Dash
+
+    [Header("Dash")]
     public int dashCount = 0;
     public bool dashUnlocked = false, jumpDashUnlocked = false;
     private Vector3 myVector;
@@ -22,9 +27,13 @@ public class Player : MonoBehaviour
     private float dashingPower = 7200f;
     private float dashingTime = 0.09f;
     private float dashingCooldown = 0.2f;
-    public bool facingRight = true, facingLeft;
+
+    [Header("Outros")]
+    public bool facingRight = true;
+    public bool facingLeft;
     private RigidbodyConstraints2D originalConstraints;
     [SerializeField] private TrailRenderer tr;
+    public GameObject gameOver;
     private bool teste;
 
     //Raycast
@@ -37,6 +46,7 @@ public class Player : MonoBehaviour
         isJumping = false;
         originalConstraints = rb.constraints;
         capsuleCollider = GetComponent<CapsuleCollider2D>();
+        respawnPoint = transform.position;
         //capsuleCollider.sharedMaterial.friction = 2;
     }
 
@@ -258,5 +268,26 @@ public class Player : MonoBehaviour
             yield return new WaitForSeconds(dashingCooldown);
             canDash = true;
         }
+    }
+
+    public static Player GetPlayer()
+    {
+        return GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+    }
+
+    public void Morrer()
+    {
+        isDead = true;
+        gameOver.SetActive(true);
+        Time.timeScale = 0;
+    }
+
+    public void Respawnar()
+    {
+        Debug.Log("restart");
+        isDead = false;
+        gameOver.SetActive(false);
+        Time.timeScale = 1;
+        transform.position = respawnPoint;
     }
 }

@@ -168,7 +168,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 950a286fb87104641ada51a2b8534dfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1341933952}
   pauseMenuUI: {fileID: 720504407}
 --- !u!1 &139454702
 GameObject:
@@ -285,11 +284,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27d246db7522c0142884b5fff0c3ac04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1341933952}
-  isDead: 0
-  gameOverActive: 0
-  gameOver: {fileID: 424413809}
-  playerDoido: {fileID: 0}
 --- !u!1 &150286973
 GameObject:
   m_ObjectHideFlags: 0
@@ -2211,9 +2205,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 139454707}
-        m_TargetAssemblyTypeName: GameOverScreen, Assembly-CSharp
-        m_MethodName: RestartButton
+      - m_Target: {fileID: 1341933945}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: Respawnar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2817,6 +2811,7 @@ GameObject:
   - component: {fileID: 1249227754}
   - component: {fileID: 1249227757}
   - component: {fileID: 1249227758}
+  - component: {fileID: 1249227759}
   m_Layer: 6
   m_Name: MORTE GEOMETRICA
   m_TagString: obstacle
@@ -2969,6 +2964,19 @@ PolygonCollider2D:
       - {x: 0.5, y: 0}
       - {x: 0.25, y: 0.43359375}
   m_UseDelaunayMesh: 0
+--- !u!114 &1249227759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249227753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d4a3fdc3e8bca0449d0425dbc616058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMorteInstantanea: 1
 --- !u!1 &1301272167
 GameObject:
   m_ObjectHideFlags: 0
@@ -3194,7 +3202,6 @@ GameObject:
   - component: {fileID: 1341933945}
   - component: {fileID: 1341933950}
   - component: {fileID: 1341933951}
-  - component: {fileID: 1341933952}
   - component: {fileID: 1341933953}
   m_Layer: 7
   m_Name: Player
@@ -3228,6 +3235,7 @@ MonoBehaviour:
   facingRight: 0
   facingLeft: 0
   tr: {fileID: 1341933951}
+  gameOver: {fileID: 424413809}
 --- !u!70 &1341933946
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -3492,20 +3500,6 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 0
   m_ApplyActiveColorSpace: 1
---- !u!114 &1341933952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1341933944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22d4449a439808a43a95380badd30381, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dead: 0
-  respawnPoint: {x: -204.81, y: 116.6, z: 0}
 --- !u!114 &1341933953
 MonoBehaviour:
   m_ObjectHideFlags: 0

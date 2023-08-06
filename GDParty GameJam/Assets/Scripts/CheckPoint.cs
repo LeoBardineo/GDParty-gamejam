@@ -5,18 +5,14 @@ using UnityEngine;
 public class CheckPoint : MonoBehaviour
 {
     // Start is called before the first frame update
-    private PlayerRespawn playerRespawn;
     private bool canMeditate;
-    void Start()
-    {
-        playerRespawn = GameObject.Find("Player").GetComponent<PlayerRespawn>();
-    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && this.canMeditate == true)
         {
             Debug.Log("Eitacomomedita");
-            playerRespawn.respawnPoint = this.transform.position;
+            Player.respawnPoint = this.transform.position;
         }
     }
 
