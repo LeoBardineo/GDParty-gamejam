@@ -3194,6 +3194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ea66107f19a7e74e88bb70976603793, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puloCheckAudio: 0
   speed: 8
   jump: 500
   isJumping: 0
@@ -3212,7 +3213,6 @@ MonoBehaviour:
   puloDuplo: {fileID: 8300000, guid: c87239245bf51334b818c6321f1ffd77, type: 3}
   dash: {fileID: 8300000, guid: cabb3eb6a8cc0da4c9f7bcf8642338e6, type: 3}
   aterrissar: {fileID: 8300000, guid: 111516d180ed634458acef071c772086, type: 3}
-  gameLoop: {fileID: 0}
 --- !u!70 &1341933946
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -3336,7 +3336,7 @@ Transform:
   m_GameObject: {fileID: 1341933944}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -193.91, y: 116.44, z: 0}
+  m_LocalPosition: {x: -233.4, y: 85.5, z: 0}
   m_LocalScale: {x: 0.49, y: 0.49, z: 0.49}
   m_ConstrainProportionsScale: 1
   m_Children:
