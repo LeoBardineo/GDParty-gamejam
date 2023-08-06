@@ -2526,14 +2526,6 @@ PrefabInstance:
       propertyPath: gameOver
       value: 
       objectReference: {fileID: 139454702}
-    - target: {fileID: 4115951622286119419, guid: c9c02634a4e59a543915443d3c2423d7, type: 3}
-      propertyPath: start
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5472219121701972329, guid: c9c02634a4e59a543915443d3c2423d7, type: 3}
-      propertyPath: m_SortingOrder
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 5669057478050183116, guid: c9c02634a4e59a543915443d3c2423d7, type: 3}
       propertyPath: m_Name
       value: Player
