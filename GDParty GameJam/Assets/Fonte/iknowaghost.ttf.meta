@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 89bd36594e821bc428e0739c66508697
+guid: 907de4584aafada4fa7a7460e94ea708
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Stranger Things
+  - I KNOW A GHOST
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
