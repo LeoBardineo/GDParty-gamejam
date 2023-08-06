@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,217 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: "medita\xE7ao 0"
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 5542
+        width: 393
+        height: 1172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74138e58967c83f4b843f261ada4b334
+      internalID: -2115267049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "medita\xE7ao 1"
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 5587
+        width: 629
+        height: 1083
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56b588406a96a2743af3232a10886edc
+      internalID: -878919399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "medita\xE7ao 2"
+      rect:
+        serializedVersion: 2
+        x: 1948
+        y: 5556
+        width: 555
+        height: 905
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8332d698a3d0e134cadbbd63f77d1fd1
+      internalID: 1378591314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "medita\xE7ao 3"
+      rect:
+        serializedVersion: 2
+        x: 2722
+        y: 5556
+        width: 522
+        height: 841
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b10688cd5503d42a8ef4281cf29cb2
+      internalID: -817236314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "medita\xE7ao 4"
+      rect:
+        serializedVersion: 2
+        x: 3421
+        y: 5556
+        width: 578
+        height: 841
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 996134316fc145044a42ed4d0006ff05
+      internalID: -1445755710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte 0
+      rect:
+        serializedVersion: 2
+        x: 1859
+        y: 4228
+        width: 1175
+        height: 1075
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0788d9e7101b98945a29e00eb8bdc76d
+      internalID: -1821232958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte 1
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 3107
+        width: 1175
+        height: 1075
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4775082d803913949a02f1093795bd95
+      internalID: 1705875618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte 2
+      rect:
+        serializedVersion: 2
+        x: 1779
+        y: 1992
+        width: 1175
+        height: 1075
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e355258b5bf8c334f83bd73f6826bef5
+      internalID: 264676151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte 3
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 628
+        width: 1175
+        height: 1075
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c06eb887792028469c4deba021e3fe8
+      internalID: 844334914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte 4
+      rect:
+        serializedVersion: 2
+        x: 3345
+        y: 660
+        width: 1175
+        height: 1075
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f9ce3816c1df2345b89ebe995a06f7a
+      internalID: -7882669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +329,20 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "medita\xE7ao 0": -2115267049
+      "medita\xE7ao 1": -878919399
+      "medita\xE7ao 2": 1378591314
+      "medita\xE7ao 3": -817236314
+      "medita\xE7ao 4": -1445755710
+      morte 0: -1821232958
+      morte 1: 1705875618
+      morte 2: 264676151
+      morte 3: 844334914
+      morte 4: -7882669
+      "morte_medita\xE7ao_0": -299498362
+      "morte_medita\xE7ao_10": -1499858167
+      "morte_medita\xE7ao_6": 1992377134
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
