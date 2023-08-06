@@ -101,7 +101,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quebrou: 0
-  gravidadeAoCair: 1
+  gravidadeAoCair: 5
+  tamanhoDoRaio: 42
+  ground: {fileID: 0}
 --- !u!61 &7584445499378190178
 BoxCollider2D:
   m_ObjectHideFlags: 0

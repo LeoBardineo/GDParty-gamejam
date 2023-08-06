@@ -11,18 +11,19 @@ public class Estresse : MonoBehaviour
     public static bool isEstresseResetando;
     public static float vignetteThreshold = 70f;
     public float minEstresse = 0f;
-    public bool lockEstresse = false;
+    public static bool lockEstresse = false;
+    public float segundosAteMorrerPorEstresse = 5f;
+    Player player;
 
     void Start()
     {
         isEstresseResetando = false;
         barraDeEstresse = 0f;
+        player = Player.GetPlayer();
     }
 
     void Update()
     {
-        // refazer, tenq ser baseado na qtd de pontos acertados
-        // colocar o vignette value = barraDeEstresse
         if (lockEstresse) return;
         if (Input.GetKeyDown(KeyCode.Home))
         {
@@ -54,7 +55,7 @@ public class Estresse : MonoBehaviour
                 CameraControl.isMuitoEstressado = true;
                 if (barraDeEstresse >= 100f)
                 {
-                    // Player.Morrer();
+                    MorrerPorEstresse();
                 }
             }
             else
@@ -72,9 +73,30 @@ public class Estresse : MonoBehaviour
         isEstresseResetando = true;
     }
 
-    void ResetarOEstresse()
+    public void ResetarOEstresse()
     {
         minEstresse = 0f;
-        isEstresseResetando = true;
+        barraDeEstresse = 0f;
+        isEstresseResetando = false;
     }
+
+    public void MorrerPorEstresse()
+    {
+        StartCoroutine(Morra());
+    }
+
+    IEnumerator Morra()
+    {
+        yield return new WaitForSeconds(segundosAteMorrerPorEstresse);
+        if (barraDeEstresse >= 100f)
+        {
+            player.Morrer();
+        }
+    }
+
+    // void ResetarOEstresseLentamente()
+    // {
+    //     minEstresse = 0f;
+    //     isEstresseResetando = true;
+    // }
 }

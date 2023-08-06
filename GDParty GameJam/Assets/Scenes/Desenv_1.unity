@@ -133,8 +133,8 @@ GameObject:
   m_Component:
   - component: {fileID: 448833782}
   - component: {fileID: 448833785}
-  - component: {fileID: 448833784}
   - component: {fileID: 448833783}
+  - component: {fileID: 448833786}
   m_Layer: 12
   m_Name: Espinhos
   m_TagString: Untagged
@@ -169,58 +169,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 978b8d5d27d9c964ca770ece25a5edd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!68 &448833784
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 448833781}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -1.6417496, y: -1.2875955}
-  - {x: -1.9254951, y: -0.4077537}
-  - {x: -1.4053364, y: -0.4963025}
-  - {x: -1.4206557, y: 0.22399235}
-  - {x: -0.8602743, y: 0.0872308}
-  - {x: -0.5824375, y: 0.45210755}
-  - {x: -0.1010766, y: -0.34687757}
-  - {x: 0.5625448, y: 0.985549}
-  - {x: 0.86437273, y: 0.38350433}
-  - {x: 1.2285166, y: 0.037718892}
-  - {x: 1.5333304, y: -0.4049505}
-  - {x: 2.2311788, y: -0.46670973}
-  - {x: 1.708986, y: -1.152184}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!212 &448833785
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -273,6 +221,59 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &448833786
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448833781}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.72, y: 4.290878}
+    newSize: {x: 4.72, y: 4.290878}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.49, y: -1.3052671}
+      - {x: -1.58, y: -1.095224}
+      - {x: -1.9499999, y: -0.41508496}
+      - {x: -1.42, y: 0.25505218}
+      - {x: -0.56, y: 0.43508902}
+      - {x: 0.55, y: 1.0052056}
+      - {x: 1.23, y: 0.065013304}
+      - {x: 2.23, y: -0.5551136}
+  m_UseDelaunayMesh: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -836,7 +837,6 @@ MonoBehaviour:
   aceleracaoDoEstresse: 1
   aceleracaoDaMeditacao: 5
   minEstresse: 0
-  lockEstresse: 0
 --- !u!114 &986433736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -853,6 +853,7 @@ MonoBehaviour:
   speed: 0
   isJumping: 0
   rb: {fileID: 0}
+  estresse: {fileID: 0}
   dashCount: 0
   facingRight: 1
   facingLeft: 0
