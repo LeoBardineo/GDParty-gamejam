@@ -740,7 +740,7 @@ Transform:
   m_GameObject: {fileID: 986433730}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.2, y: 0.89, z: 0}
+  m_LocalPosition: {x: -2.86, y: -2.41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -834,7 +834,7 @@ MonoBehaviour:
   barraDeEstresse: 0
   aceleracaoDoEstresse: 1
   aceleracaoDaMeditacao: 5
-  lockEstresse: 1
+  lockEstresse: 0
 --- !u!1 &992395962
 GameObject:
   m_ObjectHideFlags: 0
@@ -1002,7 +1002,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 865aab49f4e8fc645968a917a7b67774, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grounded: 0
+  quebrou: 0
+  gravidadeAoCair: 1
 --- !u!212 &1611458356
 SpriteRenderer:
   m_ObjectHideFlags: 0

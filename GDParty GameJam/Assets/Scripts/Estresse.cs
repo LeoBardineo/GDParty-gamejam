@@ -10,7 +10,8 @@ public class Estresse : MonoBehaviour
     public float aceleracaoDoEstresse, aceleracaoDaMeditacao;
     public static bool isEstresseResetando;
     public static float vignetteThreshold = 70f;
-    public bool lockEstresse = true;
+    public float minEstresse = 0f;
+    public bool lockEstresse = false;
 
     void Start()
     {
@@ -25,17 +26,22 @@ public class Estresse : MonoBehaviour
         if (lockEstresse) return;
         if (Input.GetKeyDown(KeyCode.Home))
         {
-            isEstresseResetando = !isEstresseResetando;
+            DescontarEstresse(0.5f);
         }
 
+        // Se o estresse está diminuindo,
+        // continue a diminuir até atingir 0f ou o minEstresse.
+        // Se o estresse não está diminuindo,
+        // continue aumentando até dar 100f.
         if (isEstresseResetando && barraDeEstresse >= 0f)
         {
             barraDeEstresse -= aceleracaoDaMeditacao * Time.deltaTime;
             if (barraDeEstresse <= vignetteThreshold)
             {
                 CameraControl.isMuitoEstressado = false;
-                if (barraDeEstresse <= 0f)
+                if (barraDeEstresse <= minEstresse)
                 {
+                    minEstresse = 0f;
                     isEstresseResetando = false;
                 }
             }
@@ -57,11 +63,18 @@ public class Estresse : MonoBehaviour
             }
 
         }
+        CameraControl.vignette.intensity.value = barraDeEstresse / 100f;
+    }
 
+    public void DescontarEstresse(float porcentagemDeAcerto)
+    {
+        minEstresse = barraDeEstresse * (1f - porcentagemDeAcerto);
+        isEstresseResetando = true;
     }
 
     void ResetarOEstresse()
     {
+        minEstresse = 0f;
         isEstresseResetando = true;
     }
 }
