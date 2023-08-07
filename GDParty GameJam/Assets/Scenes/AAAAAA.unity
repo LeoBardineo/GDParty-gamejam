@@ -1642,7 +1642,7 @@ GameObject:
   m_Component:
   - component: {fileID: 57995246}
   - component: {fileID: 57995247}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PUTS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13294,7 +13294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 464485463}
   - component: {fileID: 464485464}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Eu n aguento mais (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27883,11 +27883,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6040689289467705015, guid: c9c02634a4e59a543915443d3c2423d7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -286.3
+      value: 22.7
       objectReference: {fileID: 0}
     - target: {fileID: 6040689289467705015, guid: c9c02634a4e59a543915443d3c2423d7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 25.1
+      value: -10.5
       objectReference: {fileID: 0}
     - target: {fileID: 6040689289467705015, guid: c9c02634a4e59a543915443d3c2423d7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -69007,7 +69007,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1911097087}
   - component: {fileID: 1911097088}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Eu n aguento mais
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77927,7 +77927,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2121767878}
   - component: {fileID: 2121767879}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Eu n aguento mais (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
