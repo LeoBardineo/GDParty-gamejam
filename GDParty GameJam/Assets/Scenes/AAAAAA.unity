@@ -1699,7 +1699,9 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -42.608234, y: -110.294044}
+  - {x: -31.907272, y: -125.94402}
+  - {x: -42.171314, y: -121.89036}
+  - {x: -42.14651, y: -110.09462}
   - {x: -46.819664, y: -107.36424}
   - {x: -59.965076, y: -105.51611}
   - {x: -84.38062, y: -112.57049}
@@ -27987,9 +27989,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1190160368941870804, guid: c9c02634a4e59a543915443d3c2423d7, type: 3}
+      propertyPath: speed
+      value: 10.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190160368941870804, guid: c9c02634a4e59a543915443d3c2423d7, type: 3}
       propertyPath: gameOver
       value: 
       objectReference: {fileID: 1007530285}
+    - target: {fileID: 2352193025758760303, guid: c9c02634a4e59a543915443d3c2423d7, type: 3}
+      propertyPath: aceleracaoDoEstresse
+      value: 0.79
+      objectReference: {fileID: 0}
     - target: {fileID: 4115951622286119419, guid: c9c02634a4e59a543915443d3c2423d7, type: 3}
       propertyPath: redemoinho
       value: 
