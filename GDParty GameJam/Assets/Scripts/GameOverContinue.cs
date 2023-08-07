@@ -13,10 +13,7 @@ public class GameOverContinue : MonoBehaviour
     }
     void Update()
     {
-        if(timer>3)
-        {
-            timer += Time.deltaTime;
-        }
+        timer += Time.deltaTime;
         if (Input.anyKey && timer > 3)
         {
             player.Respawnar();
