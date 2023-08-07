@@ -8,6 +8,7 @@ public class Alma : MonoBehaviour
 {
     [SerializeField] string skillDesbloqueada;
     [SerializeField] Victory telaDeVitoria;
+    [SerializeField] GameObject bolinhaParaAcender;
     bool playerPerto = false;
 
     [Header("Diálogo")]
@@ -72,6 +73,7 @@ public class Alma : MonoBehaviour
             if (skillDesbloqueada == "jumpDash")
                 Player.jumpDashUnlocked = true;
         }
+        bolinhaParaAcender.SetActive(true);
         gameObject.SetActive(false);
         telaDeVitoria.almasColetadas.text = Player.almasColetadas + "/6";
     }
