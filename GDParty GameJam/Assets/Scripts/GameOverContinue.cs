@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameOverContinue : MonoBehaviour
 {
     public Player player;
-    public float timer;
+    public KeyCode key;
 
     void Awake()
     {
@@ -13,8 +13,7 @@ public class GameOverContinue : MonoBehaviour
     }
     void Update()
     {
-        timer += Time.deltaTime;
-        if (Input.anyKey && timer > 3)
+        if (Input.GetKeyDown(key))
         {
             player.Respawnar();
             Debug.Log("Reviveu mermo !");

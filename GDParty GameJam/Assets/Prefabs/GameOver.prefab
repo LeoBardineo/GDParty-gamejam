@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  timer: 0
+  key: 101
 --- !u!1 &724489518438768430
 GameObject:
   m_ObjectHideFlags: 0
