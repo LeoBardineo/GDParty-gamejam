@@ -1644,7 +1644,7 @@ GameObject:
   - component: {fileID: 57995247}
   m_Layer: 6
   m_Name: PUTS
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13296,7 +13296,7 @@ GameObject:
   - component: {fileID: 464485464}
   m_Layer: 6
   m_Name: Eu n aguento mais (2)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69009,7 +69009,7 @@ GameObject:
   - component: {fileID: 1911097088}
   m_Layer: 6
   m_Name: Eu n aguento mais
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77929,7 +77929,7 @@ GameObject:
   - component: {fileID: 2121767879}
   m_Layer: 6
   m_Name: Eu n aguento mais (1)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
