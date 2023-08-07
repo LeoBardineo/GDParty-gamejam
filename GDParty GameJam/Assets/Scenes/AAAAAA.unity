@@ -6650,6 +6650,7 @@ GameObject:
   - component: {fileID: 252926465}
   - component: {fileID: 252926466}
   - component: {fileID: 252926467}
+  - component: {fileID: 252926468}
   m_Layer: 0
   m_Name: Porta
   m_TagString: Untagged
@@ -6738,6 +6739,51 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 1307426636}
   cenaFinal: {fileID: 468719757}
+--- !u!61 &252926468
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252926464}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03779936, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.67, y: 4.72}
+    newSize: {x: 1.67, y: 4.72}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8644657, y: 4.72}
+  m_EdgeRadius: 0
 --- !u!1 &253291932
 GameObject:
   m_ObjectHideFlags: 0
@@ -28225,7 +28271,7 @@ PrefabInstance:
       objectReference: {fileID: 981959419}
     - target: {fileID: 2352193025758760303, guid: c9c02634a4e59a543915443d3c2423d7, type: 3}
       propertyPath: aceleracaoDoEstresse
-      value: 0.79
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 4115951622286119419, guid: c9c02634a4e59a543915443d3c2423d7, type: 3}
       propertyPath: redemoinho
