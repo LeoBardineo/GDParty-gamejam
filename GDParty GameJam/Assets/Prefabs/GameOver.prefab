@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Aperte qualquer bot\xE3o para tentar novamente."
+  m_text: Aperte 'E' para tentar novamente.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3dcab71ac6770a347abb692e983080fe, type: 2}
   m_sharedMaterial: {fileID: 5143568782115906903, guid: 3dcab71ac6770a347abb692e983080fe, type: 2}
