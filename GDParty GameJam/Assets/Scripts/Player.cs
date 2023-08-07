@@ -53,6 +53,7 @@ public class Player : MonoBehaviour
     private CapsuleCollider2D capsuleCollider;
     void Start()
     {
+        isJumping = true;
         jump = 500;
         anim = GetComponent<Animator>();
         isJumping = false;
