@@ -8,6 +8,7 @@ public class Alma : MonoBehaviour
 {
     [SerializeField] string skillDesbloqueada;
     [SerializeField] GameObject bolinhaParaAcender;
+    [SerializeField] GameObject Interact;
     bool playerPerto = false;
     Animator anim;
 
@@ -45,6 +46,7 @@ public class Alma : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             playerPerto = true;
+            Interact.SetActive(true);
         }
     }
 
@@ -53,6 +55,7 @@ public class Alma : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             playerPerto = false;
+            Interact.SetActive(false);
         }
     }
 

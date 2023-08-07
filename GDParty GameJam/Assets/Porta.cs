@@ -11,7 +11,7 @@ public class Porta : MonoBehaviour
 
     void Update()
     {
-        if ((podeInteragir && Player.almasColetadas >= 6) || Input.GetKeyDown(KeyCode.Tab))
+        if (podeInteragir && Player.almasColetadas >= 6)
         {
             StartCoroutine(TrocarCena());
         }

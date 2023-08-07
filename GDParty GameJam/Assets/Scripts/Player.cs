@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [Header("Geral")]
+    public GameObject interaction;
     public int puloCheckAudio;
     public float speed;
     public static float jump;
@@ -84,6 +85,14 @@ public class Player : MonoBehaviour
         if (isDashing || inDialogo || isMeditando) return;
         Dash();
         Jump();
+        if (facingLeft == true)
+        {
+            interaction.GetComponent<SpriteRenderer>().flipX = true;
+        }
+        if (facingLeft == false)
+        {
+            interaction.GetComponent<SpriteRenderer>().flipX = false;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D other)
