@@ -2881,7 +2881,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillDesbloqueada: jumpDash
-  telaDeVitoria: {fileID: 0}
   bolinhaParaAcender: {fileID: 1326447818}
   Interact: {fileID: 981959419}
   dialogo: {fileID: 2031060384}
@@ -28238,11 +28237,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6040689289467705015, guid: c9c02634a4e59a543915443d3c2423d7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -218.24
+      value: -286.54
       objectReference: {fileID: 0}
     - target: {fileID: 6040689289467705015, guid: c9c02634a4e59a543915443d3c2423d7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 85.31
+      value: 33.97
       objectReference: {fileID: 0}
     - target: {fileID: 6040689289467705015, guid: c9c02634a4e59a543915443d3c2423d7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -34855,7 +34854,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillDesbloqueada: 
-  telaDeVitoria: {fileID: 0}
   bolinhaParaAcender: {fileID: 755340242}
   Interact: {fileID: 981959419}
   dialogo: {fileID: 2031060384}
@@ -35840,7 +35838,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillDesbloqueada: doubleJump
-  telaDeVitoria: {fileID: 0}
   bolinhaParaAcender: {fileID: 253291932}
   Interact: {fileID: 981959419}
   dialogo: {fileID: 2031060384}
@@ -44795,7 +44792,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillDesbloqueada: dash
-  telaDeVitoria: {fileID: 0}
   bolinhaParaAcender: {fileID: 1813354751}
   Interact: {fileID: 981959419}
   dialogo: {fileID: 2031060384}
@@ -74657,7 +74653,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillDesbloqueada: 
-  telaDeVitoria: {fileID: 0}
   bolinhaParaAcender: {fileID: 178073207}
   Interact: {fileID: 981959419}
   dialogo: {fileID: 2031060384}
@@ -77787,7 +77782,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillDesbloqueada: jump
-  telaDeVitoria: {fileID: 0}
   bolinhaParaAcender: {fileID: 235037870}
   Interact: {fileID: 981959419}
   dialogo: {fileID: 2031060384}
