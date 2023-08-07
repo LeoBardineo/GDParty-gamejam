@@ -108,7 +108,364 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: morte espirito_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3382
+        width: 1187
+        height: 1326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3950551b16c079479d635ce4fe9a692
+      internalID: -639556798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte espirito_1
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 3385
+        width: 1187
+        height: 1326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0562fddfbc3f10d4da97e337dbd56b63
+      internalID: -149526729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte espirito_2
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 3382
+        width: 1187
+        height: 1326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425311bbbb02fb1438b51cca961dfe4d
+      internalID: -1244992951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte espirito_3
+      rect:
+        serializedVersion: 2
+        x: 4147
+        y: 3425
+        width: 1187
+        height: 1326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9df93a0c45180b4428facd18d5c4a685
+      internalID: 246587342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte espirito_4
+      rect:
+        serializedVersion: 2
+        x: 5545
+        y: 3419
+        width: 1187
+        height: 1326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48cb80b57c3d80c46bc7aa8044d42e1b
+      internalID: -1380992855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte espirito_6
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1946
+        width: 1187
+        height: 1326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f1f46225b9e02a408d8e67c59a6456d
+      internalID: 1074860248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte espirito_7
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 1992
+        width: 1187
+        height: 1326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8d422a5595f7644d9477be13b7dae65
+      internalID: 1796538747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte espirito_8
+      rect:
+        serializedVersion: 2
+        x: 2884
+        y: 2032
+        width: 1187
+        height: 1326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87d333a310a187540aad9d1f059e0606
+      internalID: -372358927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte espirito_9
+      rect:
+        serializedVersion: 2
+        x: 4238
+        y: 2028
+        width: 1187
+        height: 1326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5f404755ad93674fbdd7c1dab6e1595
+      internalID: 1841901688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte espirito_10
+      rect:
+        serializedVersion: 2
+        x: 5546
+        y: 2026
+        width: 1187
+        height: 1326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee99081b8f2bb27498f378fc99db1e85
+      internalID: -816614134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte espirito_11
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 2017
+        width: 1187
+        height: 1326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56866f4fc1851254d8375c8b228f77a5
+      internalID: 679954342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte espirito_12
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 390
+        width: 1187
+        height: 1326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e42e836edba8594f94bef71ff99cf6a
+      internalID: -351056637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte espirito_13
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 432
+        width: 1187
+        height: 1326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4138b95fbb86a8541bd81b2862cf7bc9
+      internalID: 306797756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte espirito_14
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 464
+        width: 1187
+        height: 1326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2359f14619d90354089c275bd6cea50c
+      internalID: 234779710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte espirito_15
+      rect:
+        serializedVersion: 2
+        x: 4244
+        y: 465
+        width: 1187
+        height: 1326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a01ab796a9e1d604285a86179de453d4
+      internalID: -764568405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte espirito_16
+      rect:
+        serializedVersion: 2
+        x: 5548
+        y: 472
+        width: 1187
+        height: 1326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0641873ec4c144687b27c506339195
+      internalID: 1153453131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morte espirito_17
+      rect:
+        serializedVersion: 2
+        x: 6921
+        y: 466
+        width: 1187
+        height: 1326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3594b61451d65754081162a705ca4b83
+      internalID: 769209890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +476,25 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      morte espirito_0: -639556798
+      morte espirito_1: -149526729
+      morte espirito_10: -816614134
+      morte espirito_11: 679954342
+      morte espirito_12: -351056637
+      morte espirito_13: 306797756
+      morte espirito_14: 234779710
+      morte espirito_15: -764568405
+      morte espirito_16: 1153453131
+      morte espirito_17: 769209890
+      morte espirito_2: -1244992951
+      morte espirito_3: 246587342
+      morte espirito_4: -1380992855
+      morte espirito_5: -661788621
+      morte espirito_6: 1074860248
+      morte espirito_7: 1796538747
+      morte espirito_8: -372358927
+      morte espirito_9: 1841901688
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
