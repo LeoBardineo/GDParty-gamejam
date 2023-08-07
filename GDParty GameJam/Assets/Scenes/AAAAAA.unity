@@ -2877,6 +2877,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillDesbloqueada: jumpDash
   telaDeVitoria: {fileID: 1766105115}
+  bolinhaParaAcender: {fileID: 1326447818}
   dialogo: {fileID: 2031060384}
   nomeTM: {fileID: 392452410}
   textoTM: {fileID: 796186322}
@@ -34318,6 +34319,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillDesbloqueada: 
   telaDeVitoria: {fileID: 1766105115}
+  bolinhaParaAcender: {fileID: 755340242}
   dialogo: {fileID: 2031060384}
   nomeTM: {fileID: 392452410}
   textoTM: {fileID: 796186322}
@@ -35307,6 +35309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillDesbloqueada: doubleJump
   telaDeVitoria: {fileID: 1766105115}
+  bolinhaParaAcender: {fileID: 253291932}
   dialogo: {fileID: 2031060384}
   nomeTM: {fileID: 392452410}
   textoTM: {fileID: 796186322}
@@ -44263,6 +44266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillDesbloqueada: dash
   telaDeVitoria: {fileID: 1766105115}
+  bolinhaParaAcender: {fileID: 1813354751}
   dialogo: {fileID: 2031060384}
   nomeTM: {fileID: 392452410}
   textoTM: {fileID: 796186322}
@@ -73892,6 +73896,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillDesbloqueada: 
   telaDeVitoria: {fileID: 1766105115}
+  bolinhaParaAcender: {fileID: 178073207}
   dialogo: {fileID: 2031060384}
   nomeTM: {fileID: 392452410}
   textoTM: {fileID: 796186322}
@@ -77021,6 +77026,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillDesbloqueada: jump
   telaDeVitoria: {fileID: 1766105115}
+  bolinhaParaAcender: {fileID: 235037870}
   dialogo: {fileID: 2031060384}
   nomeTM: {fileID: 392452410}
   textoTM: {fileID: 796186322}
