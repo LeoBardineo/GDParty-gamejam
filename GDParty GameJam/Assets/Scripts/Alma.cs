@@ -61,7 +61,7 @@ public class Alma : MonoBehaviour
         if (skillDesbloqueada != null && skillDesbloqueada != "")
         {
             if (skillDesbloqueada == "jump")
-                Player.jump = 2000;
+                Player.jump = 1450;
 
             if (skillDesbloqueada == "doubleJump")
                 Player.doubleJumpUnlocked = true;
