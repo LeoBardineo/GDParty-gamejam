@@ -2883,6 +2883,7 @@ MonoBehaviour:
   skillDesbloqueada: jumpDash
   telaDeVitoria: {fileID: 0}
   bolinhaParaAcender: {fileID: 1326447818}
+  Interact: {fileID: 981959419}
   dialogo: {fileID: 2031060384}
   nomeTM: {fileID: 392452410}
   textoTM: {fileID: 796186322}
@@ -7584,6 +7585,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Checkpoint (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6914041111800254740, guid: 691a499797cbdec4faf70359edfc5161, type: 3}
+      propertyPath: interaction
+      value: 
+      objectReference: {fileID: 981959419}
     - target: {fileID: 7002263585411176199, guid: 691a499797cbdec4faf70359edfc5161, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4
@@ -22492,6 +22497,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Checkpoint (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6914041111800254740, guid: 691a499797cbdec4faf70359edfc5161, type: 3}
+      propertyPath: interaction
+      value: 
+      objectReference: {fileID: 981959419}
     - target: {fileID: 7002263585411176199, guid: 691a499797cbdec4faf70359edfc5161, type: 3}
       propertyPath: m_LocalPosition.x
       value: -229.14
@@ -28211,6 +28220,10 @@ PrefabInstance:
       propertyPath: gameOver
       value: 
       objectReference: {fileID: 1007530285}
+    - target: {fileID: 1190160368941870804, guid: c9c02634a4e59a543915443d3c2423d7, type: 3}
+      propertyPath: interaction
+      value: 
+      objectReference: {fileID: 981959419}
     - target: {fileID: 2352193025758760303, guid: c9c02634a4e59a543915443d3c2423d7, type: 3}
       propertyPath: aceleracaoDoEstresse
       value: 0.79
@@ -28225,11 +28238,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6040689289467705015, guid: c9c02634a4e59a543915443d3c2423d7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -287
+      value: -218.24
       objectReference: {fileID: 0}
     - target: {fileID: 6040689289467705015, guid: c9c02634a4e59a543915443d3c2423d7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 23.6
+      value: 85.31
       objectReference: {fileID: 0}
     - target: {fileID: 6040689289467705015, guid: c9c02634a4e59a543915443d3c2423d7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -28265,7 +28278,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6040689289467705015, guid: c9c02634a4e59a543915443d3c2423d7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 981959420}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9c02634a4e59a543915443d3c2423d7, type: 3}
 --- !u!1001 &865523658
@@ -29647,6 +29663,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Checkpoint (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6914041111800254740, guid: 691a499797cbdec4faf70359edfc5161, type: 3}
+      propertyPath: interaction
+      value: 
+      objectReference: {fileID: 981959419}
     - target: {fileID: 7002263585411176199, guid: 691a499797cbdec4faf70359edfc5161, type: 3}
       propertyPath: m_LocalPosition.x
       value: 149.04
@@ -31563,6 +31583,90 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isMorteInstantanea: 1
+--- !u!1 &981959419
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 981959420}
+  - component: {fileID: 981959421}
+  m_Layer: 7
+  m_Name: Interagir
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &981959420
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981959419}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.16, y: 3.41, z: 0}
+  m_LocalScale: {x: 9.060041, y: 9.060041, z: 9.060041}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 144851238}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &981959421
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981959419}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 300
+  m_Sprite: {fileID: 21300000, guid: 0cc957508f013a64bb2b1f1c5861aa07, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.16, y: 0.16}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &990892981
 GameObject:
   m_ObjectHideFlags: 0
@@ -34753,6 +34857,7 @@ MonoBehaviour:
   skillDesbloqueada: 
   telaDeVitoria: {fileID: 0}
   bolinhaParaAcender: {fileID: 755340242}
+  Interact: {fileID: 981959419}
   dialogo: {fileID: 2031060384}
   nomeTM: {fileID: 392452410}
   textoTM: {fileID: 796186322}
@@ -35737,6 +35842,7 @@ MonoBehaviour:
   skillDesbloqueada: doubleJump
   telaDeVitoria: {fileID: 0}
   bolinhaParaAcender: {fileID: 253291932}
+  Interact: {fileID: 981959419}
   dialogo: {fileID: 2031060384}
   nomeTM: {fileID: 392452410}
   textoTM: {fileID: 796186322}
@@ -44691,6 +44797,7 @@ MonoBehaviour:
   skillDesbloqueada: dash
   telaDeVitoria: {fileID: 0}
   bolinhaParaAcender: {fileID: 1813354751}
+  Interact: {fileID: 981959419}
   dialogo: {fileID: 2031060384}
   nomeTM: {fileID: 392452410}
   textoTM: {fileID: 796186322}
@@ -48552,6 +48659,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Checkpoint (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6914041111800254740, guid: 691a499797cbdec4faf70359edfc5161, type: 3}
+      propertyPath: interaction
+      value: 
+      objectReference: {fileID: 981959419}
     - target: {fileID: 7002263585411176199, guid: 691a499797cbdec4faf70359edfc5161, type: 3}
       propertyPath: m_LocalPosition.x
       value: 78
@@ -50344,6 +50455,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Checkpoint
       objectReference: {fileID: 0}
+    - target: {fileID: 6914041111800254740, guid: 691a499797cbdec4faf70359edfc5161, type: 3}
+      propertyPath: interaction
+      value: 
+      objectReference: {fileID: 981959419}
     - target: {fileID: 7002263585411176199, guid: 691a499797cbdec4faf70359edfc5161, type: 3}
       propertyPath: m_LocalPosition.x
       value: -106.56
@@ -59343,6 +59458,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Checkpoint (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6914041111800254740, guid: 691a499797cbdec4faf70359edfc5161, type: 3}
+      propertyPath: interaction
+      value: 
+      objectReference: {fileID: 981959419}
     - target: {fileID: 7002263585411176199, guid: 691a499797cbdec4faf70359edfc5161, type: 3}
       propertyPath: m_LocalPosition.x
       value: -210.32
@@ -74540,6 +74659,7 @@ MonoBehaviour:
   skillDesbloqueada: 
   telaDeVitoria: {fileID: 0}
   bolinhaParaAcender: {fileID: 178073207}
+  Interact: {fileID: 981959419}
   dialogo: {fileID: 2031060384}
   nomeTM: {fileID: 392452410}
   textoTM: {fileID: 796186322}
@@ -77669,6 +77789,7 @@ MonoBehaviour:
   skillDesbloqueada: jump
   telaDeVitoria: {fileID: 0}
   bolinhaParaAcender: {fileID: 235037870}
+  Interact: {fileID: 981959419}
   dialogo: {fileID: 2031060384}
   nomeTM: {fileID: 392452410}
   textoTM: {fileID: 796186322}

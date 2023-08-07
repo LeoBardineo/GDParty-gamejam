@@ -7,6 +7,7 @@ public class CheckPoint : MonoBehaviour
     // Start is called before the first frame update
     private bool canMeditate;
     MeditationController meditationController;
+    [SerializeField] GameObject interaction;
 
     void Start()
     {
@@ -30,11 +31,20 @@ public class CheckPoint : MonoBehaviour
             this.canMeditate = true;
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == "Player")
+        {
+            interaction.SetActive(true);
+        }
+    }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.name == "Player")
         {
             this.canMeditate = false;
+            interaction.SetActive(false);
         }
     }
 }
