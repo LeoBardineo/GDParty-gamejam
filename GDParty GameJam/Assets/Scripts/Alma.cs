@@ -7,9 +7,9 @@ using TMPro;
 public class Alma : MonoBehaviour
 {
     [SerializeField] string skillDesbloqueada;
-    [SerializeField] Victory telaDeVitoria;
     [SerializeField] GameObject bolinhaParaAcender;
     bool playerPerto = false;
+    Animator anim;
 
     [Header("Diálogo")]
     public GameObject dialogo;
@@ -22,7 +22,7 @@ public class Alma : MonoBehaviour
 
     void Start()
     {
-
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -75,7 +75,6 @@ public class Alma : MonoBehaviour
         }
         bolinhaParaAcender.SetActive(true);
         gameObject.SetActive(false);
-        telaDeVitoria.almasColetadas.text = Player.almasColetadas + "/6";
     }
 
     void comecaDialogo()
@@ -101,15 +100,22 @@ public class Alma : MonoBehaviour
         else
         {
             terminaDialogo();
-            coletarAlma();
         }
     }
 
     void terminaDialogo()
     {
+        anim.Play("Soul_Freedom");
+        StartCoroutine(terminaDialogoComDelay());
+    }
+
+    IEnumerator terminaDialogoComDelay()
+    {
+        yield return new WaitForSeconds(1f);
         Player.inDialogo = false;
         dialogo.SetActive(false);
         Estresse.lockEstresse = false;
         dialogoFinalizou = true;
+        coletarAlma();
     }
 }
