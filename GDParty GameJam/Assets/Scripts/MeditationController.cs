@@ -27,7 +27,7 @@ public class MeditationController : MonoBehaviour
         Estresse.lockEstresse = true;
         playerScript.isMeditando = true;
         playerScript.rb.velocity = new Vector3(0, 0, 0);
-        // playerScript.ChangeAnimationState("PlayerMeditation");
+        playerScript.ChangeAnimationState("PlayerMeditation");
         medidationGame = Instantiate(minigame, new Vector3(player.transform.position.x, player.transform.position.y + 4.5f, 0f), Quaternion.identity);
         CameraControl.vignette.intensity.value = 0f;
         TerminaMiniGame();

@@ -117,8 +117,8 @@ TextureImporter:
         y: 5546
         width: 629
         height: 1172
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.518283, y: 0.48976108}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,12 +134,12 @@ TextureImporter:
       name: "medita\xE7ao 1"
       rect:
         serializedVersion: 2
-        x: 1191
-        y: 5587
+        x: 1201
+        y: 5590
         width: 629
         height: 1172
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.47217807, y: 0.28924915}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -155,12 +155,12 @@ TextureImporter:
       name: "medita\xE7ao 2"
       rect:
         serializedVersion: 2
-        x: 1951
-        y: 5559
+        x: 1952
+        y: 5558
         width: 629
         height: 1172
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.49920508, y: 0.27389076}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -176,12 +176,12 @@ TextureImporter:
       name: "medita\xE7ao 3"
       rect:
         serializedVersion: 2
-        x: 2665
-        y: 5552
+        x: 2669
+        y: 5558
         width: 629
         height: 1172
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.50397456, y: 0.23037542}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -197,12 +197,12 @@ TextureImporter:
       name: "medita\xE7ao 4"
       rect:
         serializedVersion: 2
-        x: 3422
-        y: 5556
+        x: 3433
+        y: 5559
         width: 629
         height: 1172
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.48966613, y: 0.22269624}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
