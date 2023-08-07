@@ -176,10 +176,10 @@ TextureImporter:
       name: Alminha do monumento
       rect:
         serializedVersion: 2
-        x: 133
-        y: 894
-        width: 167
-        height: 149
+        x: 57
+        y: 840
+        width: 318
+        height: 259
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

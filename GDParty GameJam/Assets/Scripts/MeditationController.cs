@@ -24,6 +24,7 @@ public class MeditationController : MonoBehaviour
 
     public void IniciarMinigame()
     {
+        if (playerScript.isMeditando) return;
         Estresse.lockEstresse = true;
         playerScript.isMeditando = true;
         playerScript.rb.velocity = new Vector3(0, 0, 0);
