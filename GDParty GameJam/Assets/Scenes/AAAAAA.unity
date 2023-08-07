@@ -27873,6 +27873,10 @@ PrefabInstance:
       propertyPath: gameOver
       value: 
       objectReference: {fileID: 1007530285}
+    - target: {fileID: 4115951622286119419, guid: c9c02634a4e59a543915443d3c2423d7, type: 3}
+      propertyPath: redemoinho
+      value: 
+      objectReference: {fileID: 1929400549}
     - target: {fileID: 5669057478050183116, guid: c9c02634a4e59a543915443d3c2423d7, type: 3}
       propertyPath: m_Name
       value: Player
@@ -34448,7 +34452,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.5
+  orthographic size: 8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

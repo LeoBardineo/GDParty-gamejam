@@ -12,6 +12,7 @@ public class MeditationController : MonoBehaviour
     public static float pontos = 0f;
     public static float totalPontos = 29f;
     Object medidationGame = new Object();
+    public GameObject redemoinho;
     //public bool minigameOn = false;
 
     void Awake()
@@ -31,6 +32,9 @@ public class MeditationController : MonoBehaviour
         playerScript.ChangeAnimationState("PlayerMeditation");
         medidationGame = Instantiate(minigame, new Vector3(player.transform.position.x, player.transform.position.y + 4.5f, 0f), Quaternion.identity);
         CameraControl.vignette.intensity.value = 0f;
+        Camera.main.orthographicSize = 7.5f;
+        player.GetComponent<AudioSource>().Pause();
+        redemoinho.SetActive(false);
         TerminaMiniGame();
     }
 
@@ -49,6 +53,9 @@ public class MeditationController : MonoBehaviour
         estresse.DescontarEstresse(pontos / totalPontos);
         Estresse.lockEstresse = false;
         playerScript.isMeditando = false;
+        Camera.main.orthographicSize = 8f;
+        player.GetComponent<AudioSource>().Play();
+        redemoinho.SetActive(true);
         // animar "desmeditar" (play in reverse)
     }
 
