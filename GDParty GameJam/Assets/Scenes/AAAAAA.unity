@@ -17298,6 +17298,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isMorteInstantanea: 1
+--- !u!1 &598287928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 598287930}
+  - component: {fileID: 598287929}
+  m_Layer: 0
+  m_Name: MusicaEstresse
+  m_TagString: MusicaJogo2
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &598287929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598287928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3989ab163d04a2a478391cc41a9bb110, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NomeTag: MusicaJogo2
+  NameTagPassada: MusicaMenu
+--- !u!4 &598287930
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598287928}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -281.92615, y: 27.984615, z: -0.13488019}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &600220406
 GameObject:
   m_ObjectHideFlags: 0
@@ -28271,7 +28317,7 @@ PrefabInstance:
       objectReference: {fileID: 981959419}
     - target: {fileID: 2352193025758760303, guid: c9c02634a4e59a543915443d3c2423d7, type: 3}
       propertyPath: aceleracaoDoEstresse
-      value: 0.01
+      value: 0.77
       objectReference: {fileID: 0}
     - target: {fileID: 4115951622286119419, guid: c9c02634a4e59a543915443d3c2423d7, type: 3}
       propertyPath: redemoinho
@@ -34348,6 +34394,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isMorteInstantanea: 1
+--- !u!1 &1055981509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1055981511}
+  - component: {fileID: 1055981510}
+  m_Layer: 0
+  m_Name: Musica
+  m_TagString: MusicaJogo1
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1055981510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055981509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3989ab163d04a2a478391cc41a9bb110, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NomeTag: MusicaJogo1
+  NameTagPassada: MusicaMenu
+--- !u!4 &1055981511
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055981509}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -281.92615, y: 27.984615, z: -0.13488019}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1067992112
 GameObject:
   m_ObjectHideFlags: 0
@@ -79395,3 +79487,5 @@ SceneRoots:
   - {fileID: 1235047553}
   - {fileID: 1007530284}
   - {fileID: 468719761}
+  - {fileID: 1055981511}
+  - {fileID: 598287930}
